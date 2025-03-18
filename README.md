@@ -38,6 +38,7 @@
 * [靜態網頁跟動態網頁的差別](https://eugene87222.github.io/2017/10/07/20171007-build-own-website/)
 * [【个人网站搭建】GitHub pages+hexo框架下为next主题添加菜单分类页面](https://blog.csdn.net/wangqingchuan92/article/details/111933517)
 * [Hexo-Next 主题博客个性化配置超详细，超全面(两万字)](https://blog.csdn.net/as480133937/article/details/100138838)
+* [GitHub Pages的index.html無法顯示](https://siongui.github.io/zh/2017/03/13/github-pages-index-html-not-working/)
 ### HTML/CSS/JavaScript
 * [從零開始用github架設靜態網站入門(2) - HTML & Bootstrap](https://ithelp.ithome.com.tw/articles/10257535)
 * [從零開始用github架設靜態網站入門(3) - CSS客製化](https://ithelp.ithome.com.tw/articles/10257578)

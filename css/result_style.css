@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px; /* Adjust logo size */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Layout of content: main and aside side by side */
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Main content takes up the remaining space */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main h1, main h2 {
+    color: #333;
+}
+
+main .intro p {
+    font-size: 18px;
+}
+
+main .features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main .features ul li {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Aside Styling */
+aside {
+    width: 250px; /* Set a fixed width for the aside */
+    background-color: #ddd;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+aside h3 {
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}

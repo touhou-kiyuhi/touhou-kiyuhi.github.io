@@ -1,12 +1,20 @@
-/* General body styling */
+/* 讓整體容器占滿全高，使用 Flex 垂直排列 */
 body {
+    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header Styling */
+/* 最外層包裝整個頁面 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度 100% 視窗高 */
+}
+
+/* Header 頂部 */
 header {
     background-color: #333;
     color: white;
@@ -37,15 +45,17 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Layout of content: main and aside side by side */
+/* 中間內容區會自動撐開剩餘高度 */
 .content-wrapper {
     display: flex;
+    flex: 1; /* 撐開剩餘空間 */
     padding: 20px;
+    justify-content: center; /* 水平置中整個內容區 */
 }
 
-/* Main Content Styling */
+/* Main 與 Aside 內的內容自己處理對齊 */
 main {
-    flex: 1; /* Main content takes up the remaining space */
+    flex: 1;
     padding: 20px;
     background-color: #f4f4f4;
 }
@@ -69,9 +79,9 @@ main .features ul li {
     padding: 5px;
 }
 
-/* Aside Styling */
+/* Aside 固定寬度 */
 aside {
-    width: 250px; /* Set a fixed width for the aside */
+    width: 250px;
     background-color: #ddd;
     padding: 10px;
     margin-right: 20px;
@@ -90,7 +100,7 @@ aside ul li {
     margin: 5px 0;
 }
 
-/* Footer Styling */
+/* Footer 固定在下方 */
 footer {
     background-color: #333;
     color: white;

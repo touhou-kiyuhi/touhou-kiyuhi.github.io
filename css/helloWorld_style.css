@@ -1,9 +1,17 @@
 /* General body styling */
 body {
+    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* 最外層包裝整個頁面 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度 100% 視窗高 */
 }
 
 /* Header Styling */
@@ -40,7 +48,9 @@ header nav ul li a {
 /* Layout of content: main and aside side by side */
 .content-wrapper {
     display: flex;
+    flex: 1; /* 撐開剩餘空間 */
     padding: 20px;
+    justify-content: center; /* 水平置中整個內容區 */
 }
 
 /* Main Content Styling */

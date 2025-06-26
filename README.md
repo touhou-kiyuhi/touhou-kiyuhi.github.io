@@ -48,7 +48,10 @@
 * [建立 Firebase RealTime Database](https://steam.oxxostudio.tw/category/python/example/firebase-1.html)
 * [設定 Firebase RealTime Database 安全規則](https://steam.oxxostudio.tw/category/python/example/firebase-2.html)
 * [串接 Firebase RealTime Database 存取資料](https://steam.oxxostudio.tw/category/python/example/firebase-3.html)
-Node.js
+### Node.js
 * [Download Node.js®](https://nodejs.org/en/download/)
 * [Node.js安裝與NPM使用](https://easonwang.gitbook.io/class)
 * [Node.jsのリリースサイクルを理解し、最適なバージョンを選択する方法](https://dev.classmethod.jp/articles/nodejs-release-choice/)
+### W3Schools
+* [How TO - Profile Card](https://www.w3schools.com/howto/howto_css_profile_card.asp)
+* [How TO - Slideshow](https://www.w3schools.com/howto/howto_js_slideshow.asp)

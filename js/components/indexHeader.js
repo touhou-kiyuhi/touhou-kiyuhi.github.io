@@ -21,9 +21,13 @@ class IndexHeader extends HTMLElement {
             loadTemplate(`${basePath}/pages/components/indexHeader.html`),
             loadTemplate(`${basePath}/css/components/indexHeader.css`)
         ]);
-    // 替換 HTML 內的 logo 路徑
-    const fixedHtml = html.replace(/src="\.?\/?images\/logo\.png"/g, `src="${basePath}/images/logo.png"`);
-    this.shadowRoot.innerHTML = `<style>${css}</style>${fixedHtml}`;
+        // 替換 HTML 內的 logo 路徑
+        const fixedHtml = html.replace(/src="\.?\/?images\/logo\.png"/g, `src="${basePath}/images/logo.png"`);
+        this.shadowRoot.innerHTML = `<style>${css}</style>${fixedHtml}`;
+        
+        // #Home 
+        const homeLink = this.shadowRoot.getElementById('home-link');
+        homeLink.href = `${basePath}/index.html`;
     }
 }
 

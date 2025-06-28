@@ -1,3 +1,7 @@
+// 自動判斷 base 路徑（支援 localhost 和 GitHub Pages）
+const isLocalhost = location.hostname === 'localhost';
+const basePath = isLocalhost ? '' : '/github_webTest.github.io';
+
 // 使用模組載入 HTML 與 CSS
 async function loadTemplate(url) {
     const res = await fetch(url);
@@ -17,8 +21,9 @@ class IndexHeader extends HTMLElement {
             loadTemplate('./pages/components/indexHeader.html'),
             loadTemplate('./css/components/indexHeader.css')
         ]);
-    
-    this.shadowRoot.innerHTML = `<style>${css}</style>${html}`;
+    // 替換 HTML 內的 logo 路徑
+    const fixedHtml = html.replace(/src="\.?\/?images\/logo\.png"/g, `src="${basePath}/images/logo.png"`);
+    this.shadowRoot.innerHTML = `<style>${css}</style>${fixedHtml}`;
     }
 }
 

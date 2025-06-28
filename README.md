@@ -1,6 +1,6 @@
 # github_webTest.github.io
 ## 網站
-### 連結：[link](https://touhou-kiyuhi.github.io/github_webTest.github.io/)
+### 連結：[link](https://touhou-kiyuhi.github.io/)
 ### 架構
 ```
 / (根目錄)

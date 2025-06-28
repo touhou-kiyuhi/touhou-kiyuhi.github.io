@@ -8,19 +8,8 @@
 </head>
 <body>
     <div class="page-container">
-        <header>
-            <div class="logo">
-                <img src="../images/logo.png" alt="Site Logo" title="窩是隻卯咪！！ 嗷嗷嗷！！">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Header 內容 -->
+    	<index-header></index-header>
         <div class="content-wrapper">
             <aside>
                 <h3>Related Articles</h3>
@@ -48,16 +37,12 @@
                 </article>
             </main>
         </div>
-        <footer>
-            <p>&copy; 2025 My Website. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                </ul>
-            </nav>
-        </footer>
+        <!-- Footer 內容 -->
+        <index-footer></index-footer>
     </div>
+    <!-- 載入 Web Component -->
+    <script type="module" src="../js/components/indexHeader.js"></script>
+    <script type="module" src="../js/components/indexFooter.js"></script>
     <script src="../js/helloWorld_script.js"></script>
 </body>
 </html>

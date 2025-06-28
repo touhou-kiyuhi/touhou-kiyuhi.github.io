@@ -1,3 +1,7 @@
+// 自動判斷 base 路徑（支援 localhost 和 GitHub Pages）
+const isLocalhost = location.hostname === 'localhost';
+const basePath = isLocalhost ? '' : '/github_webTest.github.io';
+
 // 使用模組載入 HTML 與 CSS
 async function loadTemplate(url) {
     const res = await fetch(url);
@@ -14,8 +18,8 @@ class IndexFooter extends HTMLElement {
 
     async connectedCallback() {
         const [html, css] = await Promise.all([
-            loadTemplate('./pages/components/indexFooter.html'),
-            loadTemplate('./css/components/indexFooter.css')
+            loadTemplate(`${basePath}/pages/components/indexFooter.html`),
+            loadTemplate(`${basePath}/css/components/indexFooter.css`)
         ]);
     
     this.shadowRoot.innerHTML = `<style>${css}</style>${html}`;

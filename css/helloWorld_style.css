@@ -48,9 +48,15 @@ main .features ul li {
     padding: 5px;
 }
 
-/* Aside Styling */
+/* Aside 固定寬度 */
+.content-asides {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 aside {
-    width: 250px; /* Set a fixed width for the aside */
     background-color: #ddd;
     padding: 10px;
     margin-right: 20px;

@@ -27,7 +27,7 @@ class IndexHeader extends HTMLElement {
         
         // #Home 
         const homeLink = this.shadowRoot.getElementById('home-link');
-        homeLink.href = `${basePath}/index.html`;
+        homeLink.href = `${basePath}/`;
     }
 }
 

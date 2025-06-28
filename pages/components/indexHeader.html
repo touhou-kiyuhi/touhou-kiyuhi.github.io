@@ -4,18 +4,10 @@
     </div>
     <nav>
         <ul>
-            <li><a id="home-link" href="#">Home</a></li>
+            <li><a id="home-link" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
-
-<script>
-    const isLocalhost = location.hostname === 'localhost';
-    const basePath = isLocalhost ? '' : '/github_webTest.github.io';
-    // #Home
-    const homeLink = document.getElementById('home-link');
-    homeLink.href = `${basePath}/index.html`;
-</script>

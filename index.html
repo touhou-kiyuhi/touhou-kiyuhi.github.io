@@ -5,44 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>home</title>
+    <title>ljjmk94 Home Page</title>
 </head>
 <body>
     <div class="page-container">
     	<!-- Header 內容 -->
-    	<header>
-            <div class="logo">
-                <img src="images/logo.png" alt="Site Logo" title="窩是隻卯咪！！ 嗷嗷嗷！！">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    	<index-header></index-header>
         <div class="content-wrapper">
 	        <!-- 側欄 -->
-            <aside>
-                <h3>Related Articles</h3>
-                <ul>
-                    <li><a href="#article1">Article 1</a></li>
-                    <li><a href="#article2">Article 2</a></li>
-                </ul>
-                <div class="user-card">
-                    <img src="images/mikaEatingRollCake.gif" alt="卯咪！！" title="窩是隻卯咪！！ 嗷嗷嗷！！" style="width:100%">
-                    <h1>卯咪</h1>
-                    <p class="title">CEO & Founder, Example</p>
-                    <p>Cat University</p>
-                    <a href="https://www.instagram.com/kiyuhi_touhou/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://x.com/kiyuhi_touhou"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@%E6%9D%B1%E6%96%B9%E5%A7%AC%E9%9B%AA%E6%9F%8A"><i class="fa fa-youtube-play"></i></a>
-                    <a href="https://github.com/touhou-kiyuhi"><i class="fa fa-github"></i></a>
-                    <p><button>Contact</button></p>
-                </div>
-            </aside>
+             <div class="content-asides">
+                <aside>
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="#article1">Article 1</a></li>
+                        <li><a href="#article2">Article 2</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <div class="user-card">
+                        <img src="images/mikaEatingRollCake.gif" alt="卯咪！！" title="窩是隻卯咪！！ 嗷嗷嗷！！" style="width:100%">
+                        <h1>卯咪</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Cat University</p>
+                        <a href="https://www.instagram.com/kiyuhi_touhou/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://x.com/kiyuhi_touhou" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@%E6%9D%B1%E6%96%B9%E5%A7%AC%E9%9B%AA%E6%9F%8A" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://github.com/touhou-kiyuhi" target="_blank"><i class="fa fa-github"></i></a>
+                        <p><button>Contact</button></p>
+                    </div>
+                </aside>
+             </div>
 	        <!-- 主內容 -->
             <main>
                 <section class="intro">
@@ -63,17 +55,12 @@
                 </article>
             </main>
         </div>
-	    <!-- Footer 內容 -->
-    	<footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-            <nav>
-            	<ul>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-            	</ul>
-            </nav>
-    	</footer>
+        <!-- Footer 內容 -->
+        <index-footer></index-footer>
     </div>
+    <!-- 載入 Web Component -->
+    <script type="module" src="./js/components/indexHeader.js"></script>
+    <script type="module" src="./js/components/indexFooter.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

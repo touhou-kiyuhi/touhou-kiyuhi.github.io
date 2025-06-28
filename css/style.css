@@ -14,37 +14,6 @@ body {
     min-height: 100vh; /* 最小高度 100% 視窗高 */
 }
 
-/* Header 頂部 */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo img {
-    width: 50px; /* Adjust logo size */
-}
-
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* 中間內容區會自動撐開剩餘高度 */
 .content-wrapper {
     display: flex;
@@ -80,8 +49,14 @@ main .features ul li {
 }
 
 /* Aside 固定寬度 */
-aside {
+.content-asides {
     width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside {
     background-color: #ddd;
     padding: 10px;
     margin-right: 20px;
@@ -133,28 +108,4 @@ aside ul li {
 
 .user-card button:hover, a:hover {
     opacity: 0.7;
-}
-
-/* Footer 固定在下方 */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-footer nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer nav ul li a {
-    color: white;
-    text-decoration: none;
 }

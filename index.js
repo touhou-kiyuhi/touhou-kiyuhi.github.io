@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 2. 提供首頁（可選）
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'))
+    res.sendFile(path.join(__dirname, '/index.html'))
 });
 
 app.listen(port, () => {

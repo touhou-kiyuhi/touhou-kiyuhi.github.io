@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 最外層包裝整個頁面 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度 100% 視窗高 */
+}
+
+/* Layout of content: main and aside side by side */
+.content-wrapper {
+    display: flex;
+    flex: 1; /* 撐開剩餘空間 */
+    padding: 20px;
+    justify-content: center; /* 水平置中整個內容區 */
+}
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Main content takes up the remaining space */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main h1, main h2 {
+    color: #333;
+}
+
+main .intro p {
+    font-size: 18px;
+}
+
+main .features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main .features ul li {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Aside 固定寬度 */
+.content-asides {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside {
+    background-color: #ddd;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+aside h3 {
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+/* embed YT video  */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  border: none;
+}

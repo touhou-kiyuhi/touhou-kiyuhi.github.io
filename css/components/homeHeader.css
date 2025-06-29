@@ -49,15 +49,8 @@ header .mobile-menu {
         flex-direction: column; /* 將項目改為垂直排列 */
     }
 
-
     header nav ul li {
         margin-right: 20px;
-    }
-
-    header nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -75,9 +68,7 @@ header .mobile-menu {
 
     /* Style navigation menu links */
     header a {
-        color: white;
         padding: 14px 16px;
-        text-decoration: none;
         font-size: 17px;
         display: block;
         text-align: center;

@@ -1,17 +1,37 @@
-const express = require('express');
+// index.js
+const http = require('http');
+const fs = require('fs');
 const path = require('path');
 
-const app = express();
 const port = 3000;
 
-// 1. 指定 public 為靜態資源目錄（像 CSS/JS/圖片）
-app.use(express.static(path.join(__dirname, 'public')));
+const mimeTypes = {
+    '.html': 'text/html',
+    '.js': 'application/javascript',
+    '.css': 'text/css',
+    '.json': 'application/json',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.svg': 'image/svg+xml',
+    '.ico': 'image/x-icon'
+};
 
-// 2. 提供首頁（可選）
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'))
-});
+http.createServer((req, res) => {
+    let filePath = '.' + req.url;
+    if (filePath === './') filePath = './index.html';
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    const extname = path.extname(filePath);
+    const contentType = mimeTypes[extname] || 'application/octet-stream';
+
+    fs.readFile(filePath, (err, content) => {
+        if (err) {
+            res.writeHead(404, { 'Content-Type': 'text/plain' });
+            res.end('404 Not Found');
+        } else {
+            res.writeHead(200, { 'Content-Type': contentType });
+            res.end(content, 'utf-8');
+        }
+    });
+}).listen(port, () => {
+    console.log(`🚀 Server running at http://localhost:${port}`);
 });

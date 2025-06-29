@@ -11,18 +11,31 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 最小高度 100% 視窗高 */
+    min-height: 100vh;
 }
 
-/* 中間內容區會自動撐開剩餘高度 */
+/* 中間內容區：預設橫向排列（桌面版） */
 .content-wrapper {
     display: flex;
-    flex: 1; /* 撐開剩餘空間 */
+    flex: 1;
     padding: 20px;
-    justify-content: center; /* 水平置中整個內容區 */
+    gap: 20px; /* 替代 margin-right 更乾淨 */
 }
 
-/* Main 與 Aside 內的內容自己處理對齊 */
+/* Aside 區塊（桌面） */
+.content-asides {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+/* Main 主區塊 */
 main {
     flex: 1;
     padding: 20px;
@@ -48,20 +61,6 @@ main .features ul li {
     padding: 5px;
 }
 
-/* Aside 固定寬度 */
-.content-asides {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-aside {
-    background-color: #ddd;
-    padding: 10px;
-    margin-right: 20px;
-}
-
 aside h3 {
     color: #333;
 }
@@ -73,4 +72,20 @@ aside ul {
 
 aside ul li {
     margin: 5px 0;
+}
+
+/* ========= 🔁 響應式調整（手機） ========= */
+@media (max-width: 500px) {
+    .content-wrapper {
+        flex-direction: column; /* 變成直向排列 */
+    }
+
+    .content-asides {
+        width: 100%; /* 滿版 */
+        order: -1;    /* 移到 main 上面 */
+    }
+
+    main {
+        padding: 15px;
+    }
 }

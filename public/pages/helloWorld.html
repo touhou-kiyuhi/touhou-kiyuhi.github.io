@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/helloWorld_style.css">
+    <title>Hello World</title>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header 內容 -->
+    	<index-header></index-header>
+        <div class="content-wrapper">
+            <!-- 側欄 -->
+            <div class="content-asides">
+                <aside>
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="#article1">Article 1</a></li>
+                        <li><a href="#article2">Article 2</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- 主內容 -->
+            <main>
+                <section class="intro">
+                    <h1>Welcome to Result Page</h1>
+                    <p>Hello World!</p>
+                </section>
+                <section class="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                </section>
+                <article>
+                    <h2>Blog Post Title</h2>
+                    <p>Some content about the blog post...</p>
+                </article>
+            </main>
+        </div>
+        <!-- Footer 內容 -->
+        <index-footer></index-footer>
+    </div>
+    <!-- 載入 Web Component -->
+    <script type="module" src="/js/components/indexHeader.js"></script>
+    <script type="module" src="/js/components/indexFooter.js"></script>
+    <script src="/js/helloWorld_script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # touhou-kiyuhi.github.io
 ## 網站
-### 連結：[link](https://touhou-kiyuhi.github.io/kiyuhi.pageTest/)
+### 連結：[link](https://touhou-kiyuhi.github.io/)
 ### 架構
 ```
 / (根目錄)

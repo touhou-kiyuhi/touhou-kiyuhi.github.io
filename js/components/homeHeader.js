@@ -8,7 +8,7 @@ async function loadTemplate(url) {
     return res.text();
 }
 
-class IndexHeader extends HTMLElement {
+class HomeHeader extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({
@@ -18,8 +18,8 @@ class IndexHeader extends HTMLElement {
 
     async connectedCallback() {
         const [html, css] = await Promise.all([
-            loadTemplate(`${basePath}/pages/components/indexHeader.html`),
-            loadTemplate(`${basePath}/css/components/indexHeader.css`)
+            loadTemplate(`${basePath}/pages/components/homeHeader.html`),
+            loadTemplate(`${basePath}/css/components/homeHeader.css`)
         ]);
         // 替換 HTML 內的 logo 路徑
         const fixedHtml = html.replace(/src="\.?\/?images\/logo\.png"/g, `src="${basePath}/images/logo.png"`);
@@ -27,8 +27,8 @@ class IndexHeader extends HTMLElement {
         
         // #Home 
         const homeLink = this.shadowRoot.getElementById('home-link');
-        homeLink.href = `${basePath}/`;
+        homeLink.href = `${basePath}/pages/home.html`;
     }
 }
 
-customElements.define("index-header", IndexHeader);
+customElements.define("home-header", HomeHeader);

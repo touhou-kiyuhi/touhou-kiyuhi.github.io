@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0f0;
 }
 
 /* 最外層包裝整個頁面 */
@@ -22,55 +23,16 @@ body {
     justify-content: center; /* 水平置中整個內容區 */
 }
 
-/* Main 與 Aside 內的內容自己處理對齊 */
-main {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-main h1, main h2 {
-    color: #333;
-}
-
-main .intro p {
-    font-size: 18px;
-}
-
-main .features ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-main .features ul li {
-    background-color: #e0e0e0;
-    margin: 5px 0;
-    padding: 5px;
-}
-
-/* Aside 固定寬度 */
-.content-asides {
-    width: 250px;
+.user-card-wrapper {
+    margin-top: 60px;
+    max-width: 400px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
-aside {
-    background-color: #ddd;
-    padding: 10px;
-    margin-right: 20px;
-}
-
-aside h3 {
-    color: #333;
-}
-
-aside ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-aside ul li {
-    margin: 5px 0;
+user-card {
+    display: block;
+    width: 100%;
 }

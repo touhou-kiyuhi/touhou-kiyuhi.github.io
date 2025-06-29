@@ -8,7 +8,7 @@ async function loadTemplate(url) {
     return res.text();
 }
 
-class IndexFooter extends HTMLElement {
+class HomeFooter extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({
@@ -18,8 +18,8 @@ class IndexFooter extends HTMLElement {
 
     async connectedCallback() {
         const [html, css] = await Promise.all([
-            loadTemplate(`${basePath}/pages/components/indexFooter.html`),
-            loadTemplate(`${basePath}/css/components/indexFooter.css`)
+            loadTemplate(`${basePath}/pages/components/homeFooter.html`),
+            loadTemplate(`${basePath}/css/components/homeFooter.css`)
         ]);
         const fixedHtml = html;
         // 建立 Font Awesome 的 link 元素
@@ -39,8 +39,8 @@ class IndexFooter extends HTMLElement {
 
         // #Home 
         const homeLink = this.shadowRoot.getElementById('home-link');
-        homeLink.href = `${basePath}/`;
+        homeLink.href = `${basePath}/pages/home.html`;
     }
 }
 
-customElements.define("index-footer", IndexFooter);
+customElements.define("home-footer", HomeFooter);

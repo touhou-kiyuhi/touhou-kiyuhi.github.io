@@ -8,4 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(`Navigated to: ${link.textContent}`);
         });
     });
+    // 確保 custom element 加載完成
+    customElements.whenDefined('user-card').then(() => {
+		const cardWrapper = document.querySelector('.user-card-wrapper');
+
+		// 只有當螢幕寬度大於 1225px 時才執行滑動
+		if (window.innerWidth > 1000) {
+			setTimeout(() => {
+				cardWrapper.classList.add('slide-right');
+            // 等 3 秒再滑動
+			}, 3000);
+		}
+	});
 });

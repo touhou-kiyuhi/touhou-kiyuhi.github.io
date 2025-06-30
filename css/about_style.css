@@ -36,3 +36,27 @@ user-card {
     display: block;
     width: 100%;
 }
+
+/* 初始位置（原地） */
+.user-card-wrapper {
+    transition: transform 1s ease-in-out;
+}
+
+/* 加上這個 class 後會向右滑動 */
+.slide-right {
+    transform: translateX(70%); /* 調整滑動距離 */
+}
+
+@media (max-width: 1000px) {
+    /* 取消 user card 的滑動動畫 */
+    .slide-right {
+        transform: none !important;
+    }
+
+    /* user card 位置固定，不用移動 */
+    .user-card-wrapper {
+        position: static;
+        transform: none !important;
+        transition: none !important;
+    }
+}

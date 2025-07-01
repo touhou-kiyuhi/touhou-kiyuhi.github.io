@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		// 只有當螢幕寬度大於 1225px 時才執行滑動
 		if (window.innerWidth > 1000) {
 			setTimeout(() => {
+                const parent = cardWrapper.parentElement;
+                const moveDistance = parent.offsetWidth * 0.3; // 父容器寬度的 30%
+                cardWrapper.style.transform = `translateX(${moveDistance}px)`; // 使用 JS 設定 transform
 				cardWrapper.classList.add('slide-right');
             // 等 3 秒再滑動
 			}, 3000);

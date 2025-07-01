@@ -44,7 +44,7 @@ user-card {
 
 /* 加上這個 class 後會向右滑動 */
 .slide-right {
-    transform: translateX(70%); /* 調整滑動距離 */
+    will-change: transform; /* 調整滑動距離 */
 }
 
 @media (max-width: 1000px) {

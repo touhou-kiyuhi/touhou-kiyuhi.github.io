@@ -26,21 +26,39 @@ body {
     height: 100%; /* 若需撐滿父容器 */
 }
 
-/* 文字描述放第 2 格 */
+/* description-text 不受邊界限制 */
 .description-text {
-    grid-column: 2 / 3;
+    /* grid-column: 1; 放第 1 格 */
     text-align: left;
+    font-size: large;
 
-    opacity: 0;                 /* 初始透明隱藏 */
-    transform: translateX(-20px); /* 向左位移，準備滑入 */
-    transition: opacity 1s ease, transform 1s ease; /* 動畫 */
+    opacity: 1;                 /* 初始透明隱藏 */
+    font-family: monospace;     /* 使用等寬字體，打字效果更自然 */
+    white-space: normal;        /* 防止換行 */
+    display: inline-block;      /* 使文字按行顯示 */
+    visibility: visible;         /* 隱藏文字 */
+    transition: opacity 1s ease; /* 當打字開始時才顯示 */
+
+    /* 調整在打字動畫時，可跨越 column 並不會與 user card 重疊 */
+    position: absolute;         /* 讓文字可以超出邊界 */
+    left: 30%;                  /* 讓文字在第二格的中間顯示 */
+    transform: translateX(-50%); /* 用此偏移讓文字居中並超出左右邊界 */
 }
 
-.description-text.show {
-    opacity: 1;
-    transform: translateX(0);
-    /* width: 80%;
-    max-width: 400px; */
+/* 光標閃爍效果 */
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background-color: black;
+    margin-left: 3px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
 }
 
 /* 卡片一開始在第 3 格 */
@@ -78,6 +96,23 @@ user-card {
         padding: 20px;
         justify-content: center; /* 水平置中整個內容區 */
         gap: 20px;
+    }
+
+    /* description-text 位置固定，不用移動 */
+    .description-text {
+        /* 在第 3 格 */
+        grid-column: 2 / 3;
+        text-align: left;
+
+        opacity: 1;                 /* 初始透明隱藏 */
+        font-family: monospace;     /* 使用等寬字體，打字效果更自然 */
+        white-space: normal;        /* 防止換行 */
+        display: inline-block;      /* 使文字按行顯示 */
+        visibility: visible;         /* 隱藏文字 */
+        transition: opacity 1s ease; /* 當打字開始時才顯示 */
+        
+        position: static;
+        transform: none !important;
     }
 
     /* user card 位置固定，不用移動 */

@@ -1,0 +1,44 @@
+.musicPlayer-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 182, 193, 0.2); /* 櫻花粉透明底 */
+    backdrop-filter: blur(5px); /* 背景模糊效果 */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.musicPlayer-button:hover {
+    background-color: rgba(255, 182, 193, 0.4); /* 櫻花粉加深 */
+}
+
+.icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* 播放圖示（三角形） */
+.play {
+    border-width: 9px 0 9px 15px; /* 比例縮小 */
+    border-color: transparent transparent transparent white;
+}
+
+/* 暫停圖示（兩條直線） */
+.pause {
+    display: flex;
+    border: none;
+    width: auto;
+    height: auto;
+    gap: 4px; /* 也縮小點 */
+}
+
+.pause div {
+    width: 4px;  /* 比例縮小 */
+    height: 20px; /* 比例縮小 */
+    background: white;
+}

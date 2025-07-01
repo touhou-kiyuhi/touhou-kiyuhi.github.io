@@ -104,12 +104,7 @@ user-card {
         grid-column: 2 / 3;
         text-align: left;
 
-        opacity: 1;                 /* 初始透明隱藏 */
-        font-family: monospace;     /* 使用等寬字體，打字效果更自然 */
         white-space: normal;        /* 防止換行 */
-        display: inline-block;      /* 使文字按行顯示 */
-        visibility: visible;         /* 隱藏文字 */
-        transition: opacity 1s ease; /* 當打字開始時才顯示 */
         
         position: static;
         transform: none !important;

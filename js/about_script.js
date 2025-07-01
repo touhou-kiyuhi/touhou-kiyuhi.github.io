@@ -15,13 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		// 只有當螢幕寬度大於 1225px 時才執行滑動
 		if (window.innerWidth > 1000) {
-			setTimeout(() => {
+            setTimeout(() => {
+                // user card 向右滑
                 cardWrapper.classList.add('move-to-4');
-                setTimeout(() => {
-                    description.classList.add('show');
-                }, 1000);
-            // 等 3 秒再滑動
-			}, 3000);
-		}
+                descriptionShow(description);
+            // 等 1.5 秒再滑動
+			}, 1500);
+		} else {
+            setTimeout(() => {
+                // 下滑動畫
+                description.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                descriptionShow(description);
+            }, 1000);
+        }
 	});
 });
+
+// 文字描述區塊出現
+function descriptionShow(description) {
+    setTimeout(() => {
+        description.classList.add('show');
+    }, 1000);
+}

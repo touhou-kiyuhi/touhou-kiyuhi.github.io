@@ -80,13 +80,6 @@ user-card {
         gap: 20px;
     }
 
-    .description-text {
-        opacity: 1;
-        position: static;
-        transform: none !important;
-        transition: none !important;
-    }
-
     /* user card 位置固定，不用移動 */
     .user-card-wrapper {
         position: static;

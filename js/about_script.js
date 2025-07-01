@@ -8,31 +8,33 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(`Navigated to: ${link.textContent}`);
         });
     });
+
+    // 讀取 about.json 中的 lines(description text)
+    let lines = [];
+    fetch('/json/about.json')
+        .then(response => response.json())
+        .then(data => {
+            lines = data.lines;
+        })
+        .catch(error => {
+            console.log('Error loading JSON:', error);
+        });
+    const typingSpeed = 50;
+    const lineDelay = 500;
+    const lineBreakDelay = 300;
     // 確保 custom element 加載完成
     customElements.whenDefined('user-card').then(() => {
 		const cardWrapper = document.querySelector('.user-card-wrapper');
         const description = document.querySelector('.description-text');
-        const lines = [
-            "Welcome to My Page",
-            "\n",
-            "I primarily program in Python and Java, ",
-            "with occasional coding in Ruby, C, and HTML/CSS/JavaScript.",
-            "\n",
-            "This is my personal test website, ",
-            "where I practice and record my learning journey, ",
-            "including coding, language study, and anything else I explore."
-        ];
-        const typingSpeed = 50 
-        const lineDelay = 500
-        const lineBreakDelay = 300
 
+        let scrollFlag = false;
 		// 只有當螢幕寬度大於 1225px 時才執行滑動
 		if (window.innerWidth > 1000) {
             setTimeout(() => {
                 // user card 向右滑
                 cardWrapper.classList.add('move-to-4');
                 // 啟動打字效果
-                startTyping(description, lines, typingSpeed, lineDelay, lineBreakDelay);
+                startTyping(description, lines, typingSpeed, lineDelay, lineBreakDelay, scrollFlag);
             // 等 1.5 秒再滑動
 			}, 1500);
 		} else {
@@ -42,14 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 // 啟動打字效果
-                startTyping(description, lines, typingSpeed, lineDelay, lineBreakDelay);
+                startTyping(description, lines, typingSpeed, lineDelay, lineBreakDelay, scrollFlag=true);
             }, 1000);
         }
 	});
 });
 
 // 打字動畫
-function startTyping(descriptionEl, lines, typingSpeed = 100, lineDelay = 500, lineBreakDelay = 300) {
+function startTyping(descriptionEl, lines, typingSpeed = 100, lineDelay = 500, lineBreakDelay = 300, scrollFlag = false) {
     // 第一行開始
     let lineIndex = 0;
 
@@ -61,10 +63,12 @@ function startTyping(descriptionEl, lines, typingSpeed = 100, lineDelay = 500, l
             cursorEl.remove();
             lineIndex++;
             if (lineIndex < lines.length) {
-                // 下滑動畫
-                descriptionEl.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (scrollFlag) {
+                    // 下滑動畫
+                    descriptionEl.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
                 setTimeout(() => typeNextLine(), lineDelay); // 等待下一行開始
             }
         }

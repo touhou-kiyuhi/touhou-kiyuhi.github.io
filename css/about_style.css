@@ -17,19 +17,51 @@ body {
 
 /* 中間內容區會自動撐開剩餘高度 */
 .content-wrapper {
-    display: flex;
-    flex: 1; /* 撐開剩餘空間 */
+    display: grid; /* 改為 grid，取代 flex 撐開方式 */
+    grid-template-columns: repeat(5, 1fr); /* 水平切成 5 等分 */
+    flex: 1; /* 讓它撐滿高度，仍保留 */
     padding: 20px;
-    justify-content: center; /* 水平置中整個內容區 */
+    justify-items: center; /* 讓每格內容水平置中 */
+    align-items: center;   /* 垂直置中 */
+    height: 100%; /* 若需撐滿父容器 */
 }
 
+/* 文字描述放第 2 格 */
+.description-text {
+    grid-column: 2 / 3;
+    text-align: left;
+
+    opacity: 0;                 /* 初始透明隱藏 */
+    transform: translateX(-20px); /* 向左位移，準備滑入 */
+    transition: opacity 1s ease, transform 1s ease; /* 動畫 */
+}
+
+.description-text.show {
+    opacity: 1;
+    transform: translateX(0);
+    /* width: 80%;
+    max-width: 400px; */
+}
+
+/* 卡片一開始在第 3 格 */
 .user-card-wrapper {
+    grid-column: 3 / 4;
     margin-top: 60px;
     max-width: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* 新增以下動畫設定 */
+    transition: transform 1s ease;
+    transform: translateX(0); /* 初始位置 */
+}
+
+/* 加入這個 class 代表卡片移動到第 4 格 */
+.user-card-wrapper.move-to-4 {
+    transform: translateX(100%);
+    /* grid-column: 4 / 5; */
 }
 
 user-card {
@@ -37,20 +69,22 @@ user-card {
     width: 100%;
 }
 
-/* 初始位置（原地） */
-.user-card-wrapper {
-    transition: transform 1s ease-in-out;
-}
-
-/* 加上這個 class 後會向右滑動 */
-.slide-right {
-    will-change: transform; /* 調整滑動距離 */
-}
-
 @media (max-width: 1000px) {
-    /* 取消 user card 的滑動動畫 */
-    .slide-right {
+    /* 中間內容區會自動撐開剩餘高度 */
+    .content-wrapper {
+        flex-direction: column-reverse;  /* 這裡改成 column-reverse */
+        display: flex;
+        flex: 1; /* 撐開剩餘空間 */
+        padding: 20px;
+        justify-content: center; /* 水平置中整個內容區 */
+        gap: 20px;
+    }
+
+    .description-text {
+        opacity: 1;
+        position: static;
         transform: none !important;
+        transition: none !important;
     }
 
     /* user card 位置固定，不用移動 */

@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
 }
 
 /* 最外層包裝整個頁面 */
@@ -17,10 +16,21 @@ body {
 
 /* 中間內容區會自動撐開剩餘高度 */
 .content-wrapper {
-    display: grid; /* 改為 grid，取代 flex 撐開方式 */
-    grid-template-columns: repeat(5, 1fr); /* 水平切成 5 等分 */
+    display: flex;
     flex: 1; /* 讓它撐滿高度，仍保留 */
     padding: 20px;
+    gap: 20px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about-main {
+    display: grid; /* 改為 grid，取代 flex 撐開方式 */
+    grid-template-columns: repeat(5, 1fr); /* 水平切成 5 等分 */
     justify-items: center; /* 讓每格內容水平置中 */
     align-items: center;   /* 垂直置中 */
     height: 100%; /* 若需撐滿父容器 */
@@ -89,7 +99,7 @@ user-card {
 
 @media (max-width: 1000px) {
     /* 中間內容區會自動撐開剩餘高度 */
-    .content-wrapper {
+    .about-main {
         flex-direction: column-reverse;  /* 這裡改成 column-reverse */
         display: flex;
         flex: 1; /* 撐開剩餘空間 */
@@ -115,5 +125,21 @@ user-card {
         position: static;
         transform: none !important;
         transition: none !important;
+    }
+}
+
+/* ========= 🔁 響應式調整（手機） ========= */
+@media (max-width: 500px) {
+    .content-wrapper {
+        flex-direction: column; /* 變成直向排列 */
+    }
+
+    .content-asides {
+        width: 100%; /* 滿版 */
+        order: -1;    /* 移到 main 上面 */
+    }
+
+    main {
+        padding: 15px;
     }
 }

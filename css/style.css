@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
 }
 
 /* 最外層包裝整個頁面 */
@@ -20,6 +19,18 @@ body {
     display: flex;
     flex: 1; /* 撐開剩餘空間 */
     padding: 20px;
+    gap: 20px; /* 替代 margin-right 更乾淨 */
+}
+
+/* Main 主區塊 */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.index-main {
+    display: flex;
     justify-content: center; /* 水平置中整個內容區 */
 }
 
@@ -35,4 +46,20 @@ body {
 user-card {
     display: block;
     width: 100%;
+}
+
+/* ========= 🔁 響應式調整（手機） ========= */
+@media (max-width: 500px) {
+    .content-wrapper {
+        flex-direction: column; /* 變成直向排列 */
+    }
+
+    .content-asides {
+        width: 100%; /* 滿版 */
+        order: -1;    /* 移到 main 上面 */
+    }
+
+    main {
+        padding: 15px;
+    }
 }

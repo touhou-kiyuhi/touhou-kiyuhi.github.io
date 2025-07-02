@@ -28,7 +28,11 @@ body {
     background-color: #f4f4f4;
 }
 
-.about-main {
+#content-wrapper {
+    display: grid; /* 蓋過 .content-wrapper { display: flex; } */
+}
+
+#about-main {
     display: grid; /* 改為 grid，取代 flex 撐開方式 */
     grid-template-columns: repeat(5, 1fr); /* 水平切成 5 等分 */
     justify-items: center; /* 讓每格內容水平置中 */
@@ -99,7 +103,7 @@ user-card {
 
 @media (max-width: 1000px) {
     /* 中間內容區會自動撐開剩餘高度 */
-    .about-main {
+    #about-main {
         flex-direction: column-reverse;  /* 這裡改成 column-reverse */
         display: flex;
         flex: 1; /* 撐開剩餘空間 */

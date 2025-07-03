@@ -31,3 +31,19 @@ button.copy-btn {
 button.copy-btn:hover {
     background: #555;
 }
+
+/* ✅ 新增語言標籤 */
+span.lang-label {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background: #444;
+	color: #fff;
+	font-size: 0.7em;
+	padding: 2px 6px;
+	border-radius: 3px;
+	user-select: none;
+	pointer-events: none;
+	font-family: sans-serif;
+	text-transform: capitalize;
+}

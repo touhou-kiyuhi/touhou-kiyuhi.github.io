@@ -46,6 +46,7 @@ class CodeBlock extends HTMLElement {
 		const wrapper = document.createElement('div');
 		wrapper.innerHTML = `
 			<pre>
+				<span class="lang-label">${lang}</span>  <!-- ✅ 語言標籤 -->
                 <button class="copy-btn">Copy</button>
                 <code class="language-${lang}">${this.escapeHTML(code)}</code>
             </pre>
@@ -90,7 +91,11 @@ class CodeBlock extends HTMLElement {
 			json: 'json',
 			py: 'python',
 			sh: 'bash',
-			md: 'markdown'
+			md: 'markdown', 
+			java: 'java', 
+			c: 'c',
+			cpp: 'c++',
+			rb: 'ruby'
 		};
 		return map[ext] || null;
 	}

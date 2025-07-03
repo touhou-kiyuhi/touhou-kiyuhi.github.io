@@ -14,12 +14,12 @@ function updateUserCardInfo(wrapper, basePath) {
     const indexRegex = new RegExp(`^${basePath}/?(index\\.html)?$`);
     const isIndex = indexRegex.test(location.pathname);
 
+    const fixedP = wrapper.querySelector('p:not(.title)');
+    const button = wrapper.querySelector('button');
     if (isIndex) {
-        const fixedP = wrapper.querySelector('p:not(.title)');
         if (fixedP) {
             fixedP.textContent = '🐾 小雪 🐾';
         }
-        const button = wrapper.querySelector('button');
         if (button) {
             button.textContent = 'Home';
             // 清除原本可能的事件（如果有）
@@ -30,6 +30,13 @@ function updateUserCardInfo(wrapper, basePath) {
                 window.location.href = `${basePath}/pages/home.html`;
             });
         }
+    } else {
+        // 新增點擊事件：跳轉首頁
+        button.addEventListener('click', () => {
+            window.location.href = `
+                mailto:dongfangjixuezhong@gmail.com?subject=Email from Kiyuhi-Touhou Website&body=Hello, I have something I'd like to ask you...
+            `;
+        });
     }
 }
 

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/helloWorld_style.css">
+    <!-- 載入 Web Component -->
+    <script type="module" src="/js/components/homeHeader.js"></script>
+    <script type="module" src="/js/components/homeFooter.js"></script>
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="module" src="/js/components/codeBlock.js"></script>
     <title>Hello World</title>
 </head>
 <body>
@@ -39,9 +47,10 @@
                 <section>
                     <h2>Learn Hello World in Java</h2>
                     <p>This video demonstrates how to print "Hello World" in Java:</p>
+                    <code-block src="/program_source/java/helloWorld/HelloWorld.java"></code-block>
                     <div class="video-wrapper">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/5o3fMLPY7qY"
+                            <iframe src="https://www.youtube.com/embed/Bm9b2tvDZ8c"
                                     title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -59,9 +68,7 @@
         <!-- Footer 內容 -->
         <home-footer></home-footer>
     </div>
-    <!-- 載入 Web Component -->
-    <script type="module" src="/js/components/homeHeader.js"></script>
-    <script type="module" src="/js/components/homeFooter.js"></script>
+    
     <script src="/js/helloWorld_script.js"></script>
 </body>
 </html>

@@ -6,11 +6,12 @@
 / (根目錄)
 │
 ├── index.js
-├── index.html                 # 首頁
+├── index.html                 # User Card 的引導頁面(進入首頁前的引導頁面)
 ├── services.html              # 服務頁面
 ├── contact.html               # 聯絡頁面
 │
 ├── pages/                     # HTML 檔案
+│   ├── home.html              # 首頁
 │   ├── about.html             # 關於
 │   ├── result.html            # 其他頁面
 │   └── components             # Web Components: Header, Footer
@@ -19,6 +20,7 @@
 │
 ├── css/                       # CSS 檔案
 │   ├── style.css              # 主樣式檔案
+│   ├── home_style.css         # 首頁
 │   ├── about_style.css        # 關於
 │   ├── result_style.css       # 其他頁面的樣式檔案
 │   └── components             # Web Components: Header, Footer
@@ -27,6 +29,7 @@
 │
 ├── js/                        # JavaScript 檔案
 │   ├── script.js              # 主程式檔案
+│   ├── home_script.js         # 首頁
 │   ├── about_script.js        # 關於
 │   ├── result_script.js       # 其他頁面的程式碼
 │   └── components             # Web Components: Header, Footer
@@ -42,6 +45,9 @@
 ├── json/                      # json檔案
 │   └── about.json             # 關於
 │
+├── program_source/            # 程式檔案(用於網頁顯示)
+│   └── helloWorld.java        # hello World!
+|
 └── fonts/                     # 字型檔案
     ├── custom-font.woff       # 自定義字型
     └── custom-font.ttf        # 字型檔案

@@ -74,20 +74,6 @@ aside ul li {
     margin: 5px 0;
 }
 
-/* embed YT video  */
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.video-container iframe {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  max-width: 800px;
-  border: none;
-}
-
 /* ========= 🔁 響應式調整（手機） ========= */
 @media (max-width: 500px) {
     .content-wrapper {

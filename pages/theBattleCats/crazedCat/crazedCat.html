@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/theBattleCats/theBattleCats.css">
+    <title>狂亂貓咪</title>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header 內容 -->
+    	<home-header></home-header>
+        <div class="content-wrapper">
+            <!-- 側欄 -->
+            <div class="content-asides">
+                <aside>
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="#article1">Article 1</a></li>
+                        <li><a href="#article2">Article 2</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- 主內容 -->
+            <main>
+                <!-- Crazed Cat Content from json -->
+                <the-battle-cats-main data-json="/json/theBattleCats/crazedCat/crazedCat.json"></the-battle-cats-main>
+                <article>
+                    <h2>Blog Post Title</h2>
+                    <p>Some content about the blog post...</p>
+                </article>
+            </main>
+        </div>
+        <!-- Footer 內容 -->
+        <home-footer></home-footer>
+    </div>
+    <!-- 載入 Web Component -->
+    <script type="module" src="/js/components/homeHeader.js"></script>
+    <script type="module" src="/js/components/homeFooter.js"></script>
+    <script type="module" src="/js/components/theBattleCatsMain.js"></script>
+    <script src="/js/theBattleCats/theBattleCats.js"></script>
+</body>
+</html>

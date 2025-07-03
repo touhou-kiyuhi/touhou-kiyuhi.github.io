@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/theBattleCats_style.css">
-    <title>The Battle Cats</title>
+    <link rel="stylesheet" href="/css/theBattleCats/theBattleCats.css">
+    <title>大狂亂貓咪</title>
 </head>
 <body>
     <div class="page-container">
@@ -24,18 +24,8 @@
             </div>
             <!-- 主內容 -->
             <main>
-                <section class="intro">
-                    <h1>歡迎來到 貓咪大戰爭 🐾</h1>
-                    <p>紀錄 貓咪大戰爭 🐾 的地方 🐾🐾</p>
-                </section>
-                <section class="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li><a href="/pages/theBattleCats/cyclone/red/redCyclone.html">Feature 1：絕．紅色突變</a></li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                    </ul>
-                </section>
+                <!-- Manic Cat Content from json -->
+                <the-battle-cats-main data-json="/json/theBattleCats/manicCat/manicCat.json"></the-battle-cats-main>
                 <article>
                     <h2>Blog Post Title</h2>
                     <p>Some content about the blog post...</p>
@@ -48,6 +38,7 @@
     <!-- 載入 Web Component -->
     <script type="module" src="/js/components/homeHeader.js"></script>
     <script type="module" src="/js/components/homeFooter.js"></script>
-    <script src="/js/theBattleCats_script.js"></script>
+    <script type="module" src="/js/components/theBattleCatsMain.js"></script>
+    <script src="/js/theBattleCats/theBattleCats.js"></script>
 </body>
 </html>

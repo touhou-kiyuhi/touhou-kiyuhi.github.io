@@ -1,0 +1,33 @@
+/* Main 主區塊 */
+h1, h2 {
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* embed YT video  */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  border: none;
+}

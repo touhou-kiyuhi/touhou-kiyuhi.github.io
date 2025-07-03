@@ -45,11 +45,13 @@ class CodeBlock extends HTMLElement {
 
 		const wrapper = document.createElement('div');
 		wrapper.innerHTML = `
-			<pre>
-				<span class="lang-label">${lang}</span>  <!-- ✅ 語言標籤 -->
-                <button class="copy-btn">Copy</button>
-                <code class="language-${lang}">${this.escapeHTML(code)}</code>
-            </pre>
+			<div class="code-wrapper">
+				<button class="copy-btn">Copy</button>  <!-- ✅ Copy 移出 pre -->
+				<pre>
+					<span class="lang-label">${lang}</span>  <!-- ✅ 保留你原本的位置 -->
+					<code class="language-${lang}">${this.escapeHTML(code)}</code>
+				</pre>
+			</div>
 		`;
 
 		this.shadowRoot.appendChild(styleEl);
@@ -61,17 +63,18 @@ class CodeBlock extends HTMLElement {
 			hljs.highlightElement(codeEl);
 		}
 
-        this.shadowRoot.addEventListener('click', e => {
-            if (e.target.classList.contains('copy-btn')) {
-                const code = this.shadowRoot.querySelector('code');
-                navigator.clipboard.writeText(code.textContent).then(() => {
-                    e.target.textContent = 'Copied!';
-                    setTimeout(() => {
-                        e.target.textContent = 'Copy';
-                    }, 1000);
-                });
-            }
-        });
+		this.shadowRoot.addEventListener('click', e => {
+			const btn = e.target.closest('button.copy-btn');
+			if (btn) {
+				const code = this.shadowRoot.querySelector('code');
+				navigator.clipboard.writeText(code.textContent).then(() => {
+					btn.textContent = 'Copied!';
+					setTimeout(() => {
+						btn.textContent = 'Copy';
+					}, 1000);
+				});
+			}
+		});
 	}
 
 	escapeHTML(str) {

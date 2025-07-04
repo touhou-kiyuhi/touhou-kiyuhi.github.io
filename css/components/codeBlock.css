@@ -1,59 +1,63 @@
-pre {
-    background: #1e1e1e;
-    color: #fff;
-    padding: 0em 1em;
-    border-radius: 6px;
-    overflow-x: auto;
-    font-family: Consolas, monospace;
-    position: relative;
-    text-align: left; /* ✅ 讓內部文字靠左對齊 */
-}
-
-pre code {
-    display: block;     /* ✅ 讓 <code> 成為區塊，才能控制寬度與對齊 */
-    white-space: pre;   /* ✅ 保留原始縮排 */
-    text-align: left;   /* ✅ 確保文字靠左 */
-}
-
-button.copy-btn {
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 4px 8px;
-    cursor: pointer;
-    font-size: 0.8em;
-}
-
-button.copy-btn:hover {
-    background: #555;
-}
-
-/* ✅ 新增語言標籤 */
-span.lang-label {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: #444;
-    color: #fff;
-    font-size: 0.7em;
-    padding: 2px 6px;
-    border-radius: 3px;
-    user-select: none;
-    pointer-events: none;
-    font-family: sans-serif;
-    text-transform: capitalize;
-}
-
-/* ✅ 外層包裝，讓按鈕不隨 pre 捲動 */
+/* 包裝代碼區域的容器 */
 .code-wrapper {
-    position: relative;
+    position: relative;               /* 使用相對定位，方便後續對 .lang-label 和 .copy-btn 定位 */
+    background-color: #111;         /* 背景色與 code 區段相同，保證統一風格 */
+    color: white;                   /* 文字顏色為白色 */
+    border-radius: 5px;               /* 圓角邊框 */
+    padding: 10px;                    /* 內邊距 */
+    overflow: hidden;                 /* 隱藏超出範圍的內容 */
+    border: 1px solid #444;         /* 邊框顏色 */
 }
 
-/* ✅ 固定 copy 按鈕在右上角 */
-.code-wrapper button.copy-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 10;
+/* 顯示語言標籤的位置 */
+.lang-label {
+    position: absolute;               /* 絕對定位，相對於 .code-wrapper 容器 */
+    top: 10px;                        /* 距離上邊緣 10px */
+    left: 10px;                       /* 距離左邊緣 10px */
+    font-weight: bold;                /* 文字加粗 */
+    font-size: 14px;                  /* 字體大小 */
+    color: #f0f0f0;                 /* 文字顏色為亮灰色 */
+}
+
+/* 複製按鈕的樣式 */
+.copy-btn {
+    position: absolute;               /* 絕對定位 */
+    top: 10px;                        /* 距離上邊緣 10px */
+    right: 10px;                      /* 距離右邊緣 10px */
+    background-color: #333;         /* 背景色為深灰 */
+    color: white;                   /* 文字顏色為白色 */
+    border: none;                     /* 不顯示邊框 */
+    padding: 5px 10px;                /* 內邊距，為按鈕提供一些空間 */
+    cursor: pointer;                  /* 游標變為點擊樣式 */
+    border-radius: 5px;               /* 圓角邊框 */
+    font-size: 12px;                  /* 字體大小 */
+}
+
+/* 當滑鼠懸停在複製按鈕上時，改變背景顏色 */
+.copy-btn:hover {
+    background-color: #555;         /* 滑鼠懸停時背景色變為較亮的灰色 */
+}
+
+/* 代碼區域（pre）樣式 */
+pre {
+    margin-top: 30px;                 /* 預留空間給 .lang-label 和 .copy-btn，避免它們擠在一起 */
+    padding: 10px;                    /* 內邊距，保證代碼區域與邊框有距離 */
+    background-color: #111;         /* 背景色與 .code-wrapper 保持一致 */
+    overflow-x: auto;                 /* 開啟水平滾動條，讓長代碼顯示時可以左右滾動 */
+    border-top: 1px solid #444;     /* 用線段隔開，與 .copy-btn 和 .lang-label 之間的距離 */
+    border-bottom: 1px solid #444;  /* 用線段隔開，與代碼內容區分 */
+    white-space: pre-wrap;            /* 保證代碼會自動換行，避免超出容器 */
+    word-wrap: break-word;            /* 長單詞或長代碼行自動換行 */
+    max-height: 300px;                /* 設置最大高度，超過時會出現垂直滾動條 */
+}
+
+/* 代碼元素（code）樣式 */
+code {
+    display: block;                   /* 使代碼區域顯示為塊級元素 */
+    padding: 5px;                     /* 內邊距，為代碼提供一些空間 */
+    background: transparent;          /* 背景透明，讓背景顏色依賴父元素 */
+    color: #dcdcdc;                 /* 代碼文字顏色為淡灰色 */
+    font-family: Consolas, Monaco, monospace; /* 設置字體為等寬字體，便於顯示代碼 */
+    font-size: 14px;                  /* 字體大小 */
+    white-space: pre;                 /* 保持代碼格式，換行和空格按原樣顯示 */
 }

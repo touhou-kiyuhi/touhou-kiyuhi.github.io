@@ -40,6 +40,8 @@ main {
     flex: 1;
     padding: 20px;
     background-color: #f4f4f4;
+
+    overflow: hidden; /* 防止內容溢出 */
 }
 
 main h1, main h2 {
@@ -89,7 +91,7 @@ aside ul li {
 }
 
 /* ========= 🔁 響應式調整（手機） ========= */
-@media (max-width: 500px) {
+@media (max-width: 610px) {
     .content-wrapper {
         flex-direction: column; /* 變成直向排列 */
     }

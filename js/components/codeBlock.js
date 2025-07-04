@@ -46,9 +46,9 @@ class CodeBlock extends HTMLElement {
 		const wrapper = document.createElement('div');
 		wrapper.innerHTML = `
 			<div class="code-wrapper">
+				<span class="lang-label">${lang}</span>  <!-- ✅ 保留你原本的位置 -->
 				<button class="copy-btn">Copy</button>  <!-- ✅ Copy 移出 pre -->
 				<pre>
-					<span class="lang-label">${lang}</span>  <!-- ✅ 保留你原本的位置 -->
 					<code class="language-${lang}">${this.escapeHTML(code)}</code>
 				</pre>
 			</div>

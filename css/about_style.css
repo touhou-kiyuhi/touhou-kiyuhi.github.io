@@ -133,7 +133,7 @@ user-card {
 }
 
 /* ========= 🔁 響應式調整（手機） ========= */
-@media (max-width: 500px) {
+@media (max-width: 610px) {
     .content-wrapper {
         flex-direction: column; /* 變成直向排列 */
     }

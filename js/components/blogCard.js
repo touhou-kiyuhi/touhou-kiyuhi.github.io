@@ -8,6 +8,11 @@ async function loadTemplate(url) {
     return res.text();
 }
 
+async function loadJSON(url) {
+	const res = await fetch(url);
+	return res.json();
+}
+
 class BlogCard extends HTMLElement {
     constructor() {
         super();
@@ -32,18 +37,19 @@ class BlogCard extends HTMLElement {
         // 建立 <style>
         const styleEl = document.createElement('style');
         styleEl.textContent = css;
-        
+
         // 包裝 HTML 為 element
         const wrapper = document.createElement('div');
-        wrapper.innerHTML = fixedHtml;
-        
-        // 加入所有內容進 shadow DOM
-        this.shadowRoot.appendChild(fontAwesomeLink);
-        this.shadowRoot.appendChild(styleEl);
-        this.shadowRoot.appendChild(wrapper);
+        wrapper.innerHTML = fixedHtml
+
+        const dataUrl = this.getAttribute('data-json');
+        // 讀取 JSON 資料
+		const data = await loadJSON(dataUrl);
+
+        this.render(data, fontAwesomeLink, styleEl, wrapper);
 
         // src
-        const src = this.getAttribute('src');
+        const src = data.page;
         const blogLink = wrapper.querySelector('article');
         if (src) {
             // 設定點擊時跳轉的 URL
@@ -52,6 +58,19 @@ class BlogCard extends HTMLElement {
             });
         }
     }
+
+    render(data, fontAwesomeLink, styleEl, wrapper) {
+		const blogCard = wrapper.querySelector('.card-content');
+        blogCard.innerHTML = `
+			<h2>${data.title}</h2>
+			<p>${data.description}</p>
+		`;
+
+		// 加入所有內容進 shadow DOM
+        this.shadowRoot.appendChild(fontAwesomeLink);
+        this.shadowRoot.appendChild(styleEl);
+        this.shadowRoot.appendChild(wrapper);
+	}
 }
 
 customElements.define("blog-card", BlogCard);

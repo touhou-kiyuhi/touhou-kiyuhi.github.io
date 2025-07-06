@@ -8,7 +8,8 @@
     <!-- 載入 Web Component -->
     <script type="module" src="/js/components/homeHeader.js"></script>
     <script type="module" src="/js/components/homeFooter.js"></script>
-    <title>貓咪大戰爭 - 貓薄荷</title>
+    <script type="module" src="/js/components/theBattleCatsMain.js"></script>
+    <title>進化的藍色貓薄荷</title>
 </head>
 <body>
     <div class="page-container">
@@ -27,20 +28,8 @@
             </div>
             <!-- 主內容 -->
             <main>
-                <section class="intro">
-                    <h1>歡迎來到 貓咪大戰爭 - 貓薄荷 🐾</h1>
-                    <p>紀錄 貓咪大戰爭 🐾 的地方 🐾🐾</p>
-                </section>
-                <section class="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li><a href="/pages/theBattleCats/catFruit/series/yellowCatFruit.html">Feature 1：進化的黃色貓薄荷</a></li>
-                        <li><a href="/pages/theBattleCats/catFruit/series/blueCatFruit.html">Feature 2：進化的藍色貓薄荷</a></li>
-                        <li><a href="/pages/theBattleCats/catFruit/series/redCatFruit.html">Feature 3：進化的紅色貓薄荷</a></li>
-                        <li><a href="/pages/theBattleCats/catFruit/series/purpleCatFruit.html">Feature 4：進化的紫色貓薄荷</a></li>
-                        <li><a href="/pages/theBattleCats/catFruit/series/greenCatFruit.html">Feature 5：進化的綠色貓薄荷</a></li>
-                    </ul>
-                </section>
+                <!-- Red Cyclone Content from json -->
+                <the-battle-cats-main data-json="/json/theBattleCats/catFruit/blueCatFruit.json"></the-battle-cats-main>
                 <article>
                     <h2>Blog Post Title</h2>
                     <p>Some content about the blog post...</p>

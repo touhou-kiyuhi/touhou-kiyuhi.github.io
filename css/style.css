@@ -1,40 +1,10 @@
-/* 讓整體容器占滿全高，使用 Flex 垂直排列 */
-body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* 最外層包裝整個頁面 */
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* 最小高度 100% 視窗高 */
-}
-
-/* 中間內容區會自動撐開剩餘高度 */
-.content-wrapper {
-    display: flex;
-    flex: 1; /* 撐開剩餘空間 */
-    padding: 20px;
-    gap: 20px; /* 替代 margin-right 更乾淨 */
-}
-
 /* Main 主區塊 */
-main {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
 .index-main {
     display: flex;
     justify-content: center; /* 水平置中整個內容區 */
 }
 
-.user-card-wrapper {
+.profile-card-wrapper {
     margin-top: 60px;
     max-width: 400px;
     width: 100%;
@@ -43,23 +13,7 @@ main {
     align-items: center;
 }
 
-user-card {
+profile-card {
     display: block;
     width: 100%;
-}
-
-/* ========= 🔁 響應式調整（手機） ========= */
-@media (max-width: 610px) {
-    .content-wrapper {
-        flex-direction: column; /* 變成直向排列 */
-    }
-
-    .content-asides {
-        width: 100%; /* 滿版 */
-        order: -1;    /* 移到 main 上面 */
-    }
-
-    main {
-        padding: 15px;
-    }
 }

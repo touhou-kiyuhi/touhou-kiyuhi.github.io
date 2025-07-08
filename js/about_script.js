@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const lineDelay = 500;
     const lineBreakDelay = 300;
     // 確保 custom element 加載完成
-    customElements.whenDefined('user-card').then(() => {
-		const cardWrapper = document.querySelector('.user-card-wrapper');
+    customElements.whenDefined('profile-card').then(() => {
+		const cardWrapper = document.querySelector('.profile-card-wrapper');
         const description = document.querySelector('.description-text');
 
         let scrollFlag = false;

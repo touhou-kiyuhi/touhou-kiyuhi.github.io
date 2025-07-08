@@ -1,0 +1,88 @@
+/* 讓整體容器占滿全高，使用 Flex 垂直排列 */
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 最外層包裝整個頁面 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 最小高度 100% 視窗高 */
+}
+
+/* 中間內容區：預設橫向排列（桌面版） */
+.content-wrapper {
+    display: flex;
+    flex: 1; /* 撐開剩餘空間 */
+    padding: 20px;
+    gap: 20px; /* 替代 margin-right 更乾淨 */
+}
+
+/* ========= 🔁 響應式調整（手機） ========= */
+@media (max-width: 610px) {
+    .content-wrapper {
+        flex-direction: column; /* 變成直向排列 */
+    }
+}
+
+/* 🌙 深色模式樣式 */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #90caf9;
+}
+
+body.dark-mode a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+}
+
+body.dark-mode .features ul li {
+    background-color: #3a3a3a;
+}
+
+/* 除了 h1~h6 之外，常見文字元素統一套用亮色 */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span,
+body.dark-mode label {
+    color: #e0e0e0;
+}
+
+/* 保留超連結 hover 效果 */
+body.dark-mode a:hover {
+    color: #ffffff;
+}
+
+/* 調整 h1, h2, h3 等標題 */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+}
+
+/* 如果某些段落被設為固定深色文字（例如 #333）也要覆蓋 */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span,
+body.dark-mode label {
+    color: #e0e0e0;
+}

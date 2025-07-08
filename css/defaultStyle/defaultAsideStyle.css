@@ -1,0 +1,38 @@
+/* Aside 區塊（桌面） */
+.content-asides {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+aside h3 {
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+/* ========= 🔁 響應式調整（手機） ========= */
+@media (max-width: 610px) {
+    .content-asides {
+        width: 100%; /* 滿版 */
+        order: -1;    /* 移到 main 上面 */
+    }
+}
+
+/* 🌙 深色模式樣式 */
+body.dark-mode aside {
+    background-color: #2a2a2a;
+}

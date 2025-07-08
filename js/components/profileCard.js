@@ -8,8 +8,8 @@ async function loadTemplate(url) {
     return res.text();
 }
 
-// 專門用來更新 User Card 資訊：按鈕、文字敘述
-function updateUserCardInfo(wrapper, basePath) {
+// 專門用來更新 Profile Card 資訊：按鈕、文字敘述
+function updateProfileCardInfo(wrapper, basePath) {
     // ✅ 只在首頁把 Contact 改成 Home（不變動 CSS）
     const indexRegex = new RegExp(`^${basePath}/?(index\\.html)?$`);
     const isIndex = indexRegex.test(location.pathname);
@@ -40,7 +40,7 @@ function updateUserCardInfo(wrapper, basePath) {
     }
 }
 
-class UserCard extends HTMLElement {
+class ProfileCard extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({
@@ -50,8 +50,8 @@ class UserCard extends HTMLElement {
 
     async connectedCallback() {
         const [html, css] = await Promise.all([
-            loadTemplate(`${basePath}/pages/components/userCard.html`),
-            loadTemplate(`${basePath}/css/components/userCard.css`)
+            loadTemplate(`${basePath}/pages/components/profileCard.html`),
+            loadTemplate(`${basePath}/css/components/profileCard.css`)
         ]);
         // 建立 Font Awesome 的 link 元素
         const fontAwesomeLink = document.createElement('link');
@@ -70,7 +70,7 @@ class UserCard extends HTMLElement {
         wrapper.innerHTML = fixedHtml;
 
         // 用外包函式來更新 User Card 資訊：按鈕、文字敘述
-        updateUserCardInfo(wrapper, basePath);
+        updateProfileCardInfo(wrapper, basePath);
 
         // 加入所有內容進 shadow DOM
         this.shadowRoot.appendChild(fontAwesomeLink);
@@ -79,4 +79,4 @@ class UserCard extends HTMLElement {
     }
 }
 
-customElements.define("user-card", UserCard);
+customElements.define("profile-card", ProfileCard);

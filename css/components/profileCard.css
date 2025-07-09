@@ -33,7 +33,7 @@
     opacity: 0.7;
 }
 
-/* 🌙 深色模式下，User Card 的 icon 顏色變白 */
+/* 🌙 深色模式下，Profile Card 的 icon 顏色變白 */
 /* 🌙 深色模式支援 */
 :host-context(body.dark-mode) .profile-card {
     background-color: #1e1e1e;

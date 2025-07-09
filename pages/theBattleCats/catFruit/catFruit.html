@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 告訴瀏覽器這個網站支援「light」和「dark」兩種配色方案 -->
+    <meta name="color-scheme" content="light dark">
+    <!-- 會在頁面尚未畫出來前決定該用哪個主題，並快速加上相對應的 class，防止閃爍（FART） -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const selectedTheme = theme || (prefersDark ? 'dark' : 'light');
+            document.documentElement.classList.add(`${selectedTheme}-mode`);
+        })();
+    </script>
+    <!-- 載入 Web Component -->
+    <script type="module" src="/js/components/homeHeader.js"></script>
+    <script type="module" src="/js/components/homeFooter.js"></script>
+    <title>貓咪大戰爭 - 貓薄荷</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Default Styles -->
     <link rel="stylesheet" href="/css/defaultStyle/defaultBodyStyle.css">
     <link rel="stylesheet" href="/css/defaultStyle/defaultAsideStyle.css">
     <link rel="stylesheet" href="/css/defaultStyle/defaultMainStyle.css">
     <!-- Self Style -->
-    <!-- 載入 Web Component -->
-    <script type="module" src="/js/components/homeHeader.js"></script>
-    <script type="module" src="/js/components/homeFooter.js"></script>
-    <title>貓咪大戰爭 - 貓薄荷</title>
 </head>
 <body>
     <div class="page-container">

@@ -7,12 +7,7 @@
 }
 
 aside {
-    background-color: #ddd;
     padding: 10px;
-}
-
-aside h3 {
-    color: #333;
 }
 
 aside ul {
@@ -32,7 +27,25 @@ aside ul li {
     }
 }
 
+/* 🌞 淺色模式樣式 */
+body.light-mode aside {
+    background-color: #ddd;
+}
+
+body.light-mode aside h3 {
+    color: #333;
+}
+
 /* 🌙 深色模式樣式 */
 body.dark-mode aside {
     background-color: #2a2a2a;
+}
+
+/* 🌙 深色模式樣式 */
+body.dark-mode aside {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode aside h3 {
+    color: #f0f0f0;
 }

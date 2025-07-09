@@ -29,6 +29,40 @@ body {
     }
 }
 
+/* 🌞 淺色模式樣式 */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.light-mode a {
+    color: #007acc;
+}
+
+body.light-mode a:hover {
+    color: #005b99;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+    color: #222222;
+}
+
+body.light-mode .features ul li {
+    background-color: #f4f4f4;
+}
+
+body.light-mode p,
+body.light-mode li,
+body.light-mode span,
+body.light-mode label {
+    color: #333333;
+}
+
 /* 🌙 深色模式樣式 */
 body.dark-mode {
     background-color: #121212;

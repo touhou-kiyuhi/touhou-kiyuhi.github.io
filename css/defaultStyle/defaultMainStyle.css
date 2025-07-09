@@ -2,11 +2,6 @@
 main {
     flex: 1;
     padding: 20px;
-    background-color: #f4f4f4;
-}
-
-main h1, main h2 {
-    color: #333;
 }
 
 main .intro p {
@@ -19,9 +14,22 @@ main .features ul {
 }
 
 main .features ul li {
-    background-color: #e0e0e0;
     margin: 5px 0;
     padding: 5px;
+}
+
+/* embed YT video  */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  border: none;
 }
 
 /* ========= 🔁 響應式調整（手機） ========= */
@@ -31,7 +39,30 @@ main .features ul li {
     }
 }
 
+/* 🌞 淺色模式樣式 */
+body.light-mode main {
+    background-color: #f4f4f4;
+}
+
+body.light-mode main h1,
+body.light-mode main h2 {
+    color: #333333;
+}
+
+body.light-mode main .features ul li {
+    background-color: #e0e0e0;
+}
+
 /* 🌙 深色模式樣式 */
 body.dark-mode main {
     background-color: #1e1e1e;
+}
+
+body.dark-mode main h1,
+body.dark-mode main h2 {
+    color: #ffffff;
+}
+
+body.dark-mode main .features ul li {
+    background-color: #3a3a3a;
 }

@@ -8,6 +8,30 @@ async function loadTemplate(url) {
     return res.text();
 }
 
+// 👉 封裝主題初始化與切換
+function applySavedTheme(body) {
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+        body.classList.add(savedTheme === 'dark' ? 'dark-mode' : 'light-mode');
+    } else {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const defaultTheme = prefersDark ? 'dark' : 'light';
+        body.classList.add(`${defaultTheme}-mode`);
+        localStorage.setItem('theme', defaultTheme);
+    }
+}
+
+function toggleTheme(body) {
+    const isDark = body.classList.contains('dark-mode');
+
+    body.classList.remove(isDark ? 'dark-mode' : 'light-mode');
+    body.classList.add(isDark ? 'light-mode' : 'dark-mode');
+
+    const newTheme = isDark ? 'light' : 'dark';
+    localStorage.setItem('theme', newTheme);
+}
+
 class HomeHeader extends HTMLElement {
     constructor() {
         super();
@@ -63,30 +87,12 @@ class HomeHeader extends HTMLElement {
         const body = document.body;
         const themeToggle = this.shadowRoot.getElementById('toggle-theme');
 
-        // 檢查 localStorage 是否有主題設定
-        const savedTheme = localStorage.getItem('theme');
+        // 初始化主題
+        applySavedTheme(body);
 
-        if (savedTheme) {
-            // 有記錄就用記錄的
-            if (savedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-            }
-        } else {
-            // 沒記錄，根據系統偏好
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (prefersDark) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        // 點擊 logo 切換模式
-        themeToggle.addEventListener('click', function () {
-            body.classList.toggle('dark-mode');
-            const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('theme', theme);
+        // 點擊 logo 切換主題
+        themeToggle.addEventListener('click', () => {
+            toggleTheme(body);
         });
     }
 }

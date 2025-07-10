@@ -1,0 +1,145 @@
+{
+    "tagList": [
+        "game",
+        "theBattleCats",
+        "catFruit",
+        "cyclone",
+        "crazedCat",
+        "manicCat"
+    ],
+    "yearList": [
+        2025
+    ],
+    "dataList": [
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "manicCat"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/manicCat/manicCat.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "crazedCat"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/crazedCat/crazedCat.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "catFruit"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/catFruit/blueCatFruit.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "catFruit"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/catFruit/yellowCatFruit.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "catFruit"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/catFruit/redCatFruit.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "catFruit"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/catFruit/greenCatFruit.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "catFruit"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/catFruit/purpleCatFruit.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/angelCyclone.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/metalCyclone.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/blackCyclone.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/whiteCyclone.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/redCyclone.json"
+        },
+        {
+            "tags": [
+                "categories",
+                "game",
+                "theBattleCats",
+                "cyclone"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/cyclone/thePerfectCyclone.json"
+        }
+    ]
+}

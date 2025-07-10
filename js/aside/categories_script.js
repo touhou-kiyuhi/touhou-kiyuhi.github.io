@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();  // 防止頁面跳轉
             // 打印被點擊的鏈接
             console.log(`Navigated to: ${link.textContent}`);
+            
+            // 設置頁面跳轉
+            window.location.href = link.getAttribute("href");  // 跳轉到 result.html  // 跳轉到 result.html
         });
     });
 
-    // categories
-    const categoriesLink = document.getElementById('categories-link');
-    categoriesLink.href = '/pages/aside/categories.html';
+    
 });

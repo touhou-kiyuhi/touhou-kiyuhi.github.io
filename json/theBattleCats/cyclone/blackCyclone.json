@@ -11,5 +11,9 @@
 			"id": "VT7gfC4fc-Q"
 		}
 	],
-	"page": "/pages/theBattleCats/cyclone/series/blackCyclone.html"
+	"page": "/pages/theBattleCats/cyclone/series/blackCyclone.html",
+	"tags": [
+		"game", "theBattleCats", "cyclone"
+	],
+	"year": 2025
 }

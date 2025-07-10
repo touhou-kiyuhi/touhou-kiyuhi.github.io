@@ -15,5 +15,9 @@
 			"id": "xFwr9s3BaNY"
 		}
 	],
-	"page": "/pages/theBattleCats/cyclone/series/redCyclone.html"
+	"page": "/pages/theBattleCats/cyclone/series/redCyclone.html",
+	"tags": [
+		"game", "theBattleCats", "cyclone"
+	],
+	"year": 2025
 }

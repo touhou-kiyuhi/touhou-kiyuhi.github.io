@@ -15,5 +15,9 @@
 			"id": "oCMD9qnRPHg"
 		}
 	],
-	"page": "/pages/theBattleCats/catFruit/series/greenCatFruit.html"
+	"page": "/pages/theBattleCats/catFruit/series/greenCatFruit.html",
+	"tags": [
+		"game", "theBattleCats", "catFruit"
+	],
+	"year": 2025
 }

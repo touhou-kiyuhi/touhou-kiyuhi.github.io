@@ -43,5 +43,9 @@
 			"id": "DQtGu8ne5lQ"
 		}
 	],
-	"page": "/pages/theBattleCats/crazedCat/crazedCat.html"
+	"page": "/pages/theBattleCats/crazedCat/crazedCat.html",
+	"tags": [
+		"game", "theBattleCats", "crazedCat"
+	],
+	"year": 2025
 }

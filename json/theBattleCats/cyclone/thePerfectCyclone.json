@@ -11,5 +11,9 @@
 			"id": "Fg1gUwXYtYg"
 		}
 	],
-	"page": "/pages/theBattleCats/cyclone/series/thePerfectCyclone.html"
+	"page": "/pages/theBattleCats/cyclone/series/thePerfectCyclone.html",
+	"tags": [
+		"game", "theBattleCats", "cyclone"
+	],
+	"year": 2025
 }

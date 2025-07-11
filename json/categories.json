@@ -2,10 +2,11 @@
     "tagList": [
         "game",
         "theBattleCats",
+        "manicCat",
+        "crazedCat",
         "catFruit",
         "cyclone",
-        "crazedCat",
-        "manicCat"
+        "lilCat"
     ],
     "yearList": [
         2025
@@ -13,7 +14,6 @@
     "dataList": [
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "manicCat"
@@ -23,7 +23,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "crazedCat"
@@ -33,7 +32,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "catFruit"
@@ -43,7 +41,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "catFruit"
@@ -53,7 +50,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "catFruit"
@@ -63,7 +59,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "catFruit"
@@ -73,7 +68,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "catFruit"
@@ -83,7 +77,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
@@ -93,7 +86,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
@@ -103,7 +95,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
@@ -113,7 +104,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
@@ -123,7 +113,6 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
@@ -133,13 +122,21 @@
         },
         {
             "tags": [
-                "categories",
                 "game",
                 "theBattleCats",
                 "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/thePerfectCyclone.json"
+        },
+        {
+            "tags": [
+                "game",
+                "theBattleCats",
+                "lilCat"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/lilCat/lilCat.json"
         }
     ]
 }

@@ -4,7 +4,7 @@ import json
 class JsonController:
     def jsonWriter(self, path, data):
         with open(path, 'w') as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f, indent=4, ensure_ascii=False)
     
     def jsonReader(self, path):
         with open(path, 'r') as f:

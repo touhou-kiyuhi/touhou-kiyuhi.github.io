@@ -17,6 +17,7 @@ h2 {
 
 /* 按鈕樣式 */
 .btn {
+    color: #333333;  /* 文字顏色設置為深色 */
     border: solid #333333;  /* 初始邊框顏色 */
     outline: none;
     padding: 12px 16px;

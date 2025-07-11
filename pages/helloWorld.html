@@ -17,6 +17,8 @@
     <!-- 載入 Web Component -->
     <script type="module" src="/js/components/homeHeader.js"></script>
     <script type="module" src="/js/components/homeFooter.js"></script>
+    <script type="module" src="/js/components/homeAside.js"></script>
+    <script type="module" src="/js/components/profileCard.js"></script>
     <!-- highlight.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -37,12 +39,10 @@
         <div class="content-wrapper">
             <!-- 側欄 -->
             <div class="content-asides">
+                <home-aside></home-aside>
                 <aside>
-                    <h3>Related Articles</h3>
-                    <ul>
-                        <li><a href="#article1">Article 1</a></li>
-                        <li><a href="#article2">Article 2</a></li>
-                    </ul>
+                    <!-- Profile Card -->
+                    <profile-card></profile-card>
                 </aside>
             </div>
             <!-- 主內容 -->

@@ -1,4 +1,4 @@
-import sys, os, requests
+import sys, os
 sys.path.append(os.getcwd())
 from tools.settings.jsonSettings_abstract import JsonSettings
 from tools.jsonClasses.jsonFileManager_abstract import JsonFileManager

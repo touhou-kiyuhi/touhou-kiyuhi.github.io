@@ -8,8 +8,4 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(`Navigated to: ${link.textContent}`);
         });
     });
-
-    // categories
-    const categoriesLink = document.getElementById('categories-link');
-    categoriesLink.href = '/pages/aside/categories.html';
 });

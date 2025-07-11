@@ -28,19 +28,35 @@ aside ul li {
 }
 
 /* 🌞 淺色模式樣式 */
-body.light-mode aside {
+:host-context(body.light-mode) aside {
     background-color: #ddd;
 }
 
-body.light-mode aside h3 {
+:host-context(body.light-mode) aside h3 {
     color: #333;
 }
 
+:host-context(body.light-mode) a {
+    color: #007acc;
+}
+
+:host-context(body.light-mode) a:hover {
+    color: #005b99;
+}
+
 /* 🌙 深色模式樣式 */
-body.dark-mode aside {
+:host-context(body.dark-mode) aside {
     background-color: #2a2a2a;
 }
 
-body.dark-mode aside h3 {
+:host-context(body.dark-mode) aside h3 {
     color: #f0f0f0;
+}
+
+:host-context(body.dark-mode) a {
+    color: #90caf9;
+}
+
+:host-context(body.dark-mode) a:hover {
+    color: #ffffff;
 }

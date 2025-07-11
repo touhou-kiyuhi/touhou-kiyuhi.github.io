@@ -1,3 +1,4 @@
+/* Profile Card */
 .profile-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -5,11 +6,13 @@
     text-align: center;
 }
 
+/* Profile Card Title */
 .profile-card .title {
     color: grey;
     font-size: 18px;
 }
 
+/* Profile Card Button */
 .profile-card button {
     border: none;
     outline: 0;
@@ -33,18 +36,32 @@
     opacity: 0.7;
 }
 
-/* 🌙 深色模式下，Profile Card 的 icon 顏色變白 */
-/* 🌙 深色模式支援 */
+/* 🌞 日間模式樣式 */
+:host-context(body.light-mode) .profile-card {
+    background-color: #ffffff;  /* 日間模式背景為白色 */
+}
+
+:host-context(body.light-mode) .profile-card .title,
+:host-context(body.light-mode) .profile-card p,
+:host-context(body.light-mode) .profile-card h1 {
+    color: #333333;  /* 日間模式文字顏色為較深的灰色 */
+}
+
+:host-context(body.light-mode) .profile-card a i {
+    color: #000000;  /* 日間模式下 icon 顏色為黑色 */
+}
+
+/* 🌙 深色模式樣式 */
 :host-context(body.dark-mode) .profile-card {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e;  /* 深色模式背景為深色 */
 }
 
 :host-context(body.dark-mode) .profile-card .title,
 :host-context(body.dark-mode) .profile-card p,
 :host-context(body.dark-mode) .profile-card h1 {
-    color: #e0e0e0;
+    color: #e0e0e0;  /* 深色模式文字顏色為淺灰色 */
 }
 
 :host-context(body.dark-mode) .profile-card a i {
-    color: white;
+    color: white;  /* 深色模式下 icon 顏色為白色 */
 }

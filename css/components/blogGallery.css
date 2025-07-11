@@ -1,3 +1,4 @@
+/* h2 樣式 */
 h2 {
     font-size: 50px;
     text-align: left;  /* 標題靠左 */
@@ -14,8 +15,9 @@ h2 {
     gap: 10px;             /* 按鈕之間的間距 */
 }
 
+/* 按鈕樣式 */
 .btn {
-    border: none;
+    border: solid #333333;  /* 初始邊框顏色 */
     outline: none;
     padding: 12px 16px;
     margin: 5px;
@@ -81,27 +83,55 @@ h2 {
     display: block;
 }
 
-/* Responsive Layout: Adjust grid for smaller screens */
+/* 🌞 淺色模式按鈕邊框樣式 */
+:host-context(body.light-mode) .btn {
+    border: solid 2px #333333;  /* 在淺色模式下，邊框顏色為深色 */
+}
+
+:host-context(body.light-mode) .btn:hover {
+    background-color: #f0f0f0;
+}
+
+:host-context(body.light-mode) .btn.active {
+    background-color: #444;
+    color: white;
+}
+
+/* 🌙 深色模式按鈕邊框樣式 */
+:host-context(body.dark-mode) .btn {
+    border: solid 2px #ffffff;  /* 在深色模式下，邊框顏色為淺色 */
+}
+
+:host-context(body.dark-mode) .btn:hover {
+    background-color: #555555;
+}
+
+:host-context(body.dark-mode) .btn.active {
+    background-color: #888888;
+    color: white;
+}
+
+/* 響應式設定不變 */
 @media (max-width: 2050px) {
     .column {
-      width: calc(25% - 16px);  /* 每行顯示 4 張卡片 */
+        width: calc(25% - 16px);  /* 每行顯示 4 張卡片 */
     }
 }
 
 @media (max-width: 1700px) {
     .column {
-      width: calc(33.33% - 16px);  /* 每行顯示 3 張卡片 */
+        width: calc(33.33% - 16px);  /* 每行顯示 3 張卡片 */
     }
 }
 
 @media (max-width: 1500px) {
     .column {
-      width: calc(50% - 16px);  /* 每行顯示 2 張卡片 */
+        width: calc(50% - 16px);  /* 每行顯示 2 張卡片 */
     }
 }
 
 @media (max-width: 1100px) {
     .column {
-      width: 100%;  /* 每行顯示 1 張卡片 */
+        width: 100%;  /* 每行顯示 1 張卡片 */
     }
 }

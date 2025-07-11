@@ -61,6 +61,42 @@ article:active {
     transform: scale(0.98);
 }
 
+/* 🌞 日間模式樣式 */
+:host-context(body.light-mode) article {
+    background-color: #ffffff; /* 日間模式背景為白色 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 淺色模式下的陰影效果 */
+}
+
+:host-context(body.light-mode) .card-content {
+    background-color: #ffffff; /* 日間模式下內容區塊為白色 */
+}
+
+:host-context(body.light-mode) .card h2 {
+    color: #333333; /* 日間模式標題顏色為深灰色 */
+}
+
+:host-context(body.light-mode) .card p {
+    color: #555555; /* 日間模式文字顏色為較淺的灰色 */
+}
+
+/* 🌙 深色模式樣式 */
+:host-context(body.dark-mode) article {
+    background-color: #2c2c2c; /* 深色模式背景為深灰色 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 深色模式下的陰影效果 */
+}
+
+:host-context(body.dark-mode) .card-content {
+    background-color: #333333; /* 深色模式下內容區塊為深灰色 */
+}
+
+:host-context(body.dark-mode) .card h2 {
+    color: #e0e0e0; /* 深色模式標題顏色為淺灰色 */
+}
+
+:host-context(body.dark-mode) .card p {
+    color: #b0b0b0; /* 深色模式文字顏色為較亮的灰色 */
+}
+
 /* 響應式設計 */
 @media (max-width: 610px) {
     article {

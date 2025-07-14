@@ -1,23 +1,25 @@
 {
-	"title": "進化的藍色貓薄荷",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "進化的藍色貓薄荷：蒼天幻惑 高級",
-			"id": "Izm6NHSQTmA"
-		},
-		{
-			"label": "進化的藍色貓薄荷：蒼天幻惑 困難",
-			"id": "q2baLQNf-2o"
-		},
-		{
-			"label": "進化的藍色貓薄荷：蒼天幻惑 超級難",
-			"id": "l6RYsHauLj4"
-		}
-	],
-	"page": "/pages/theBattleCats/catFruit/series/blueCatFruit.html",
-	"tags": [
-		"game", "theBattleCats", "catFruit"
-	],
-	"year": 2025
+    "title": "\u9032\u5316\u7684\u85cd\u8272\u8c93\u8584\u8377",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u9032\u5316\u7684\u85cd\u8272\u8c93\u8584\u8377 \u84bc\u5929\u5e7b\u60d1 \u9ad8\u7d1a",
+            "id": "Izm6NHSQTmA"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u85cd\u8272\u8c93\u8584\u8377 \u84bc\u5929\u5e7b\u60d1 \u56f0\u96e3",
+            "id": "q2baLQNf-2o"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u85cd\u8272\u8c93\u8584\u8377 \u84bc\u5929\u5e7b\u60d1 \u8d85\u7d1a\u96e3",
+            "id": "l6RYsHauLj4"
+        }
+    ],
+    "page": "/pages/theBattleCats/catFruit/blueCatFruit.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "catFruit"
+    ],
+    "year": 2025
 }

@@ -18,8 +18,8 @@
     <script type="module" src="/js/components/homeHeader.js"></script>
     <script type="module" src="/js/components/homeFooter.js"></script>
     <script type="module" src="/js/components/homeAside.js"></script>
-    <script type="module" src="/js/components/blogCard.js"></script>
-    <title>貓咪大戰爭</title>
+    <script type="module" src="/js/components/theBattleCatsMain.js"></script>
+    <title>不死生物來襲 月球</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Default Styles -->
     <link rel="stylesheet" href="/css/defaultStyle/defaultBodyStyle.css">
@@ -38,27 +38,17 @@
             </div>
             <!-- 主內容 -->
             <main>
-                <section class="intro">
-                    <h1>歡迎來到 貓咪大戰爭 🐾</h1>
-                    <p>紀錄 貓咪大戰爭 🐾 的地方 🐾🐾</p>
-                </section>
-                <section class="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li><a href="/pages/theBattleCats/crazedCat/crazedCat.html">Feature 1：狂亂貓咪</a></li>
-                        <li><a href="/pages/theBattleCats/manicCat/manicCat.html">Feature 2：大狂亂貓咪</a></li>
-                        <li><a href="/pages/theBattleCats/cyclone/cyclone.html">Feature 3：貓咪大戰爭 - 漩渦</a></li>
-                        <li><a href="/pages/theBattleCats/catFruit/catFruit.html">Feature 4：貓咪大戰爭 - 貓薄荷</a></li>
-                        <li><a href="/pages/theBattleCats/lilCat/lilCat.html">Feature 5：開眼小小貓咪</a></li>
-                        <li><a href="/pages/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.html">Feature 6：不死生物來襲 月球</a></li>
-                        <li>Feature 7</li>
-                    </ul>
-                </section>
+                <!-- Manic Cat Content from json -->
+                <the-battle-cats-main data-json="/json/categories/game/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.json"></the-battle-cats-main>
+                <article>
+                    <h2>Blog Post Title</h2>
+                    <p>Some content about the blog post...</p>
+                </article>
             </main>
         </div>
         <!-- Footer 內容 -->
         <home-footer></home-footer>
     </div>
-    <script src="/js/theBattleCatsMenu_script.js"></script>
+    <script src="/js/theBattleCats/theBattleCats.js"></script>
 </body>
 </html>

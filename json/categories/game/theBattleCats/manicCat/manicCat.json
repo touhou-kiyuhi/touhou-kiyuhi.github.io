@@ -1,23 +1,25 @@
 {
-	"title": "大狂亂貓咪",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "大狂亂坦克貓 橡膠要塞 極難",
-			"id": "pXdNynsQDZc"
-		},
-		{
-			"label": "大狂亂噁心貓 神威凜凜 極難",
-			"id": "7IFey9l_UGc"
-		},
-		{
-			"label": "大狂亂巨神貓 貓咪大冒險 極難",
-			"id": "0XAX3gaO1DE"
-		}
-	],
-	"page": "/pages/theBattleCats/manicCat/manicCat.html",
-	"tags": [
-		"game", "theBattleCats", "manicCat"
-	],
-	"year": 2025
+    "title": "\u5927\u72c2\u4e82\u8c93\u54aa",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u5927\u72c2\u4e82\u5766\u514b\u8c93 \u6a61\u81a0\u8981\u585e \u6975\u96e3",
+            "id": "pXdNynsQDZc"
+        },
+        {
+            "label": "\u5927\u72c2\u4e82\u5641\u5fc3\u8c93 \u795e\u5a01\u51dc\u51dc \u6975\u96e3",
+            "id": "7IFey9l_UGc"
+        },
+        {
+            "label": "\u5927\u72c2\u4e82\u5de8\u795e\u8c93 \u8c93\u54aa\u5927\u5192\u96aa \u6975\u96e3",
+            "id": "0XAX3gaO1DE"
+        }
+    ],
+    "page": "/pages/theBattleCats/manicCat/manicCat.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "manicCat"
+    ],
+    "year": 2025
 }

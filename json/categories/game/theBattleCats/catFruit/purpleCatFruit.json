@@ -1,23 +1,25 @@
 {
-	"title": "進化的紫色貓薄荷",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "進化的紫色貓薄荷：紫電一閃 高級",
-			"id": "Z9dGYRwF32I"
-		},
-		{
-			"label": "進化的紫色貓薄荷：紫電一閃 困難",
-			"id": "8KP6tuuxlyQ"
-		},
-		{
-			"label": "進化的紫色貓薄荷：紫電一閃 超級難",
-			"id": "PjbKQNTWCMY"
-		}
-	],
-	"page": "/pages/theBattleCats/catFruit/series/purpleCatFruit.html",
-	"tags": [
-		"game", "theBattleCats", "catFruit"
-	],
-	"year": 2025
+    "title": "\u9032\u5316\u7684\u7d2b\u8272\u8c93\u8584\u8377",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u9032\u5316\u7684\u7d2b\u8272\u8c93\u8584\u8377 \u7d2b\u96fb\u4e00\u9583 \u9ad8\u7d1a",
+            "id": "Z9dGYRwF32I"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u7d2b\u8272\u8c93\u8584\u8377 \u7d2b\u96fb\u4e00\u9583 \u56f0\u96e3",
+            "id": "8KP6tuuxlyQ"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u7d2b\u8272\u8c93\u8584\u8377 \u7d2b\u96fb\u4e00\u9583 \u8d85\u7d1a\u96e3",
+            "id": "PjbKQNTWCMY"
+        }
+    ],
+    "page": "/pages/theBattleCats/catFruit/purpleCatFruit.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "catFruit"
+    ],
+    "year": 2025
 }

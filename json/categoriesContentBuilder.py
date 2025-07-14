@@ -17,7 +17,7 @@ class CategoriesContentBuilder(JsonSettings):
         self.ytCrawler = YTCrawler(url)
 
     # 更新 
-    def update(self, data):
+    def update(self, data, index=None):
         self.ytCrawler.crawler()
         videoLabel = ' '.join(self.ytCrawler.ytTitle.split()[1:])
         print()
@@ -44,29 +44,33 @@ class CategoriesContentBuilder(JsonSettings):
                 "id": self.ytCrawler.ytVideoId
             }
             if newData not in data["videos"]:
-                data["videos"].append(newData)
+                if index == None:
+                    data["videos"].append(newData)
+                else:
+                    data["videos"].insert(index, newData)
             else:
                 print(f"pass {self.jsonFileManager.filePath}")
         self.jsonController.jsonWriter(self.jsonFileManager.filePath, data)
 
-    def builder(self):
+    def builder(self, index):
         self.jsonFileManager.check()
         data = self.jsonController.jsonReader(self.jsonFileManager.filePath)
-        self.update(data)
+        self.update(data, index)
 
 
 def main():
     category = "game"
     directory = "theBattleCats"
     parentPath = os.path.join(category, directory)
-    folder = "lilCat"
-    fileName = "lilCat"
+    folder = "zombieOutbreaksMoon"
+    fileName = "zombieOutbreaksMoon"
 
-    jsonTitle = "開眼小小貓咪"
-    url = "https://youtu.be/M6mzeSkx3UY?si=P4NYyO9YSLU12mf5"
+    index = None
+    jsonTitle = "不死生物來襲 月球"
+    url = "https://youtu.be/FNlOt9i7KuI?si=4K5ha6pasT6vU7i-"
 
     CCB = CategoriesContentBuilder(parentPath, folder, fileName, jsonTitle, url)
-    CCB.builder()
+    CCB.builder(index)
 
     data = CCB.jsonController.jsonReader(CCB.jsonFileManager.filePath)
     CCB.jsonController.jsonViewer(data)

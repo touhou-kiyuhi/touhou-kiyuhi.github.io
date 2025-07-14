@@ -4,7 +4,7 @@ import json
 class JsonController:
     def jsonWriter(self, path, data):
         with open(path, 'w') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            json.dump(data, f, indent=4)
     
     def jsonReader(self, path):
         with open(path, 'r') as f:
@@ -16,7 +16,7 @@ class JsonController:
 
 def jsonController(path=None, mode=None, data=None):
     if mode in ['w', 'r']:
-        with open(path, mode) as f:
+        with open(path, mode, encoding="utf-8") as f:
             # jsonWriter
             if mode == 'w':
                 json.dump(data, f, indent=4)

@@ -1,23 +1,25 @@
 {
-	"title": "進化的黃色貓薄荷",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "進化的黃色貓薄荷：神秘光芒 高級",
-			"id": "BOngkkCGgFE"
-		},
-		{
-			"label": "進化的黃色貓薄荷：神秘光芒 困難",
-			"id": "TOq6fEWSsNQ"
-		},
-		{
-			"label": "進化的黃色貓薄荷：神秘光芒 超級難",
-			"id": "F1Mhx-Do74c"
-		}
-	],
-	"page": "/pages/theBattleCats/catFruit/series/yellowCatFruit.html",
-	"tags": [
-		"game", "theBattleCats", "catFruit"
-	],
-	"year": 2025
+    "title": "\u9032\u5316\u7684\u9ec3\u8272\u8c93\u8584\u8377",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u9032\u5316\u7684\u9ec3\u8272\u8c93\u8584\u8377 \u795e\u79d8\u5149\u8292 \u9ad8\u7d1a",
+            "id": "BOngkkCGgFE"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u9ec3\u8272\u8c93\u8584\u8377 \u795e\u79d8\u5149\u8292 \u56f0\u96e3",
+            "id": "TOq6fEWSsNQ"
+        },
+        {
+            "label": "\u9032\u5316\u7684\u9ec3\u8272\u8c93\u8584\u8377 \u795e\u79d8\u5149\u8292 \u8d85\u7d1a\u96e3",
+            "id": "F1Mhx-Do74c"
+        }
+    ],
+    "page": "/pages/theBattleCats/catFruit/yellowCatFruit.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "catFruit"
+    ],
+    "year": 2025
 }

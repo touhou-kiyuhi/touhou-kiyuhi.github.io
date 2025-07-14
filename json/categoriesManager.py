@@ -15,7 +15,7 @@ class CategoriesManager(JsonSettings):
         for dirpath, dirnames, filenames in os.walk(self.jsonFileManager.categoriesDirectoryPath):
             for filename in filenames:
                 if filename.endswith(".json"):
-                    fullPath = os.path.join(dirpath, filename)
+                    fullPath = os.path.join(dirpath, filename).replace('\\', '/')
                     data = self.jsonController.jsonReader(self.categoriesJsonPath)
                     self.update(data, fullPath)
 

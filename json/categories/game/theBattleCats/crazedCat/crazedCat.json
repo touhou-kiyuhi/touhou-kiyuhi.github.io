@@ -1,51 +1,49 @@
 {
-	"title": "狂亂貓咪",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "狂亂貓咪 暗黑附身 超級難",
-			"id": "a7zArwC-qjQ"
-		},
-		{
-			"label": "狂亂坦克貓 絕對防壁 超級難",
-			"id": "jberloIrtEM"
-		},
-		{
-			"label": "狂亂戰鬥貓 狂戰士 超級難",
-			"id": "OAL9z64leRo"
-		},
-		{
-			"label": "狂亂噁心貓 不蘇胡面貌 超級難",
-			"id": "T4xbKLRs9KE"
-		},
-		{
-			"label": "狂亂牛貓 搖頭者 超級難",
-			"id": "qWu_gdyIX6M"
-		},
-		{
-			"label": "狂亂鳥貓 豬鹿鳥 超級難",
-			"id": "NR0ViA6y6ms"
-		},
-		{
-			"label": "狂亂魚貓 鮮魚地獄 超級難",
-			"id": "xjgQba2xxpM"
-		},
-
-
-
-
-		{
-			"label": "狂亂巨神貓 忘了自我的貓 超級難",
-			"id": "Jj3fW6nyVio"
-		},
-		{
-			"label": "狂亂萌貓 IN THE MOON",
-			"id": "DQtGu8ne5lQ"
-		}
-	],
-	"page": "/pages/theBattleCats/crazedCat/crazedCat.html",
-	"tags": [
-		"game", "theBattleCats", "crazedCat"
-	],
-	"year": 2025
+    "title": "\u72c2\u4e82\u8c93\u54aa",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u72c2\u4e82\u8c93\u54aa \u6697\u9ed1\u9644\u8eab \u8d85\u7d1a\u96e3",
+            "id": "a7zArwC-qjQ"
+        },
+        {
+            "label": "\u72c2\u4e82\u5766\u514b\u8c93 \u7d55\u5c0d\u9632\u58c1 \u8d85\u7d1a\u96e3",
+            "id": "jberloIrtEM"
+        },
+        {
+            "label": "\u72c2\u4e82\u6230\u9b25\u8c93 \u72c2\u6230\u58eb \u8d85\u7d1a\u96e3",
+            "id": "OAL9z64leRo"
+        },
+        {
+            "label": "\u72c2\u4e82\u5641\u5fc3\u8c93 \u4e0d\u8607\u80e1\u9762\u8c8c \u8d85\u7d1a\u96e3",
+            "id": "T4xbKLRs9KE"
+        },
+        {
+            "label": "\u72c2\u4e82\u725b\u8c93 \u6416\u982d\u8005 \u8d85\u7d1a\u96e3",
+            "id": "qWu_gdyIX6M"
+        },
+        {
+            "label": "\u72c2\u4e82\u9ce5\u8c93 \u8c6c\u9e7f\u9ce5 \u8d85\u7d1a\u96e3",
+            "id": "NR0ViA6y6ms"
+        },
+        {
+            "label": "\u72c2\u4e82\u9b5a\u8c93 \u9bae\u9b5a\u5730\u7344 \u8d85\u7d1a\u96e3",
+            "id": "xjgQba2xxpM"
+        },
+        {
+            "label": "\u72c2\u4e82\u5de8\u795e\u8c93 \u5fd8\u4e86\u81ea\u6211\u7684\u8c93 \u8d85\u7d1a\u96e3",
+            "id": "Jj3fW6nyVio"
+        },
+        {
+            "label": "\u72c2\u4e82\u840c\u8c93 IN THE MOON",
+            "id": "DQtGu8ne5lQ"
+        }
+    ],
+    "page": "/pages/theBattleCats/crazedCat/crazedCat.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "crazedCat"
+    ],
+    "year": 2025
 }

@@ -1,15 +1,17 @@
 {
-	"title": "天譴",
-	"description": "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾",
-	"videos": [
-		{
-			"label": "天譴：進擊的天漩渦 困難",
-			"id": "Rm47M66vjys"
-		}
-	],
-	"page": "/pages/theBattleCats/cyclone/series/angelCyclone.html",
-	"tags": [
-		"game", "theBattleCats", "cyclone"
-	],
-	"year": 2025
+    "title": "\u5929\u8b74",
+    "description": "\u7d00\u9304 \u8c93\u54aa\u5927\u6230\u722d \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "videos": [
+        {
+            "label": "\u5929\u8b74 \u9032\u64ca\u7684\u5929\u6f29\u6e26 \u56f0\u96e3",
+            "id": "Rm47M66vjys"
+        }
+    ],
+    "page": "/pages/theBattleCats/cyclone/angelCyclone.html",
+    "tags": [
+        "game",
+        "theBattleCats",
+        "cyclone"
+    ],
+    "year": 2025
 }

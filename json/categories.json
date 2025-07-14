@@ -6,7 +6,8 @@
         "crazedCat",
         "catFruit",
         "cyclone",
-        "lilCat"
+        "lilCat",
+        "zombieOutbreaksMoon"
     ],
     "yearList": [
         2025
@@ -137,6 +138,15 @@
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/lilCat/lilCat.json"
+        },
+        {
+            "tags": [
+                "game",
+                "theBattleCats",
+                "zombieOutbreaksMoon"
+            ],
+            "year": 2025,
+            "json": "/json/categories/game/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.json"
         }
     ]
 }

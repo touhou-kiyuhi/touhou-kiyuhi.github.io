@@ -1,7 +1,11 @@
 {
     "tagList": [
-        "game",
-        "theBattleCats"
+        "catFruit",
+        "crazedCat",
+        "cyclone",
+        "lilCat",
+        "manicCat",
+        "zombieOutbreaksMoon"
     ],
     "yearList": [
         2025
@@ -9,120 +13,105 @@
     "dataList": [
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "catFruit"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/catFruit/blueCatFruit.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "catFruit"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/catFruit/greenCatFruit.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "catFruit"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/catFruit/purpleCatFruit.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "catFruit"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/catFruit/redCatFruit.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "catFruit"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/catFruit/yellowCatFruit.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "crazedCat"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/crazedCat/crazedCat.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/angelCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/blackCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/metalCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/redCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/thePerfectCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "cyclone"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/cyclone/whiteCyclone.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "lilCat"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/lilCat/lilCat.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "manicCat"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/manicCat/manicCat.json"
         },
         {
             "tags": [
-                "game",
-                "theBattleCats"
+                "zombieOutbreaksMoon"
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.json"

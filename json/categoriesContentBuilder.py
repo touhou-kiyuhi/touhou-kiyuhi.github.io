@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, datetime
 sys.path.append(os.getcwd())
 from tools.settings.jsonSettings_abstract import JsonSettings
 from tools.jsonClasses.jsonFileManager_abstract import JsonFileManager
@@ -36,7 +36,7 @@ class CategoriesContentBuilder(JsonSettings):
                 ],
                 "page": pageLink,
                 "tags": tags,
-                "year": 2025
+                "year": datetime.datetime.now().year
             }
         else:
             newData = {
@@ -65,9 +65,9 @@ def main():
     folder = "zombieOutbreaksMoon"
     fileName = "zombieOutbreaksMoon"
 
-    index = None
+    index = 4
     jsonTitle = "不死生物來襲 月球"
-    url = "https://youtu.be/FNlOt9i7KuI?si=4K5ha6pasT6vU7i-"
+    url = "https://youtu.be/kvQP1f8yQpw?si=1o4SRFaXCHsUUVkR"
 
     CCB = CategoriesContentBuilder(parentPath, folder, fileName, jsonTitle, url)
     CCB.builder(index)

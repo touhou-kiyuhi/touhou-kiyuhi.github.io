@@ -37,6 +37,9 @@ class HomeAside extends HTMLElement {
         // #Categories
         const categoriesLink = this.shadowRoot.getElementById('categories-link');
         categoriesLink.href = `${basePath}/pages/aside/categories.html`;
+        // #TheBattleCatsMenu
+        const theBattleCatsMenuLink = this.shadowRoot.getElementById('theBattleCatsMenu-link');
+        theBattleCatsMenuLink.href = `${basePath}/pages/aside/theBattleCatsMenu.html`;
     }
 }
 

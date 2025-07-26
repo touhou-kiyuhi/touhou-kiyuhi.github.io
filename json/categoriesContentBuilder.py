@@ -62,12 +62,12 @@ def main():
     category = "game"
     directory = "theBattleCats"
     parentPath = os.path.join(category, directory)
-    folder = "zombieOutbreaksMoon"
-    fileName = "zombieOutbreaksMoon"
+    folder = "manicCat"
+    fileName = "manicCat"
 
-    index = 4
-    jsonTitle = "不死生物來襲 月球"
-    url = "https://youtu.be/kvQP1f8yQpw?si=1o4SRFaXCHsUUVkR"
+    index = 3
+    jsonTitle = "大狂亂貓咪"
+    url = "https://youtu.be/WSLufl_qA6I?si=q6H0Upl2hWpZ5gg5"
 
     CCB = CategoriesContentBuilder(parentPath, folder, fileName, jsonTitle, url)
     CCB.builder(index)

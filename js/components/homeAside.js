@@ -40,6 +40,9 @@ class HomeAside extends HTMLElement {
         // #TheBattleCatsPortfolio
         const theBattleCatsPortfolioLink = this.shadowRoot.getElementById('theBattleCatsPortfolio-link');
         theBattleCatsPortfolioLink.href = `${basePath}/pages/aside/theBattleCatsPortfolio.html`;
+        // #japanesePortfolio
+        const japanesePortfolioLink = this.shadowRoot.getElementById('japanesePortfolio-link');
+        japanesePortfolioLink.href = `${basePath}/pages/aside/japanesePortfolio.html`;
     }
 }
 

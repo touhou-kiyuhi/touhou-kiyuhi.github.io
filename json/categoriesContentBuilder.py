@@ -62,7 +62,9 @@ class CategoriesContentBuilder(JsonSettings):
 def main():
     category = "game"
     directory = "theBattleCats"
-    parentPath = os.path.join(category, directory)
+    parentPathList = [
+        ""
+    ]
     folder = "manicCat"
     fileName = "manicCat"
 
@@ -71,6 +73,11 @@ def main():
     description = "紀錄 貓咪大戰爭 🐾 的地方 🐾🐾"
     url = "https://youtu.be/WSLufl_qA6I?si=q6H0Upl2hWpZ5gg5"
 
+    parentPath = ""
+    for p in [category, directory] + parentPathList:
+        if p == "":
+            break
+        parentPath = os.path.join(parentPath, p)
     CCB = CategoriesContentBuilder(parentPath, folder, fileName, jsonTitle, description, url)
     CCB.builder(index)
 

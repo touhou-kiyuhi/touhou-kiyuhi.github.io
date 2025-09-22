@@ -1,0 +1,58 @@
+/* ===== Grammar theme / compare 區塊 ===== */
+.theme,
+.compare {
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc; 
+    background-color: transparent;  /* 預設透明，避免白色覆蓋深色 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 🌞 淺色模式 */
+body.light-mode .theme,
+body.light-mode .compare {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+body.light-mode .theme h2,
+body.light-mode .theme h3,
+body.light-mode .compare h2 {
+    color: #333333;
+}
+
+/* 🌙 深色模式 / 薄紗效果 */
+body.dark-mode .theme,
+body.dark-mode .compare {
+    background-color: rgba(50, 50, 50, 0.85); /* 半透明深灰 */
+    border: 1px solid rgba(100, 100, 100, 0.6);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .theme h2,
+body.dark-mode .theme h3,
+body.dark-mode .compare h2 {
+    color: #f1f1f1;
+}
+
+/* 表格文字左對齊 */
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* embed YT video  */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  border: none;
+}

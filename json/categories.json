@@ -1,7 +1,9 @@
 {
     "tagList": [
         "game",
-        "theBattleCats"
+        "theBattleCats",
+        "languagesStudy",
+        "japanese"
     ],
     "yearList": [
         2025
@@ -126,6 +128,14 @@
             ],
             "year": 2025,
             "json": "/json/categories/game/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.json"
+        },
+        {
+            "tags": [
+                "languagesStudy",
+                "japanese"
+            ],
+            "year": 2025,
+            "json": "/json/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori1.json"
         }
     ]
 }

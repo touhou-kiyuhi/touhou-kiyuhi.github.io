@@ -64,9 +64,9 @@ class DirectoryManager(JsonSettings):
 
 def main():
     ###### 更動部分
-    parentName = "game"
-    folderName = "theBattleCats"
-    fileName = "theBattleCats" 
+    parentName = "languagesStudy"
+    folderName = "japanese"
+    fileName = "japanese" 
     ######
     fileName += "Portfolio"
     DM = DirectoryManager(parentName, folderName, fileName)

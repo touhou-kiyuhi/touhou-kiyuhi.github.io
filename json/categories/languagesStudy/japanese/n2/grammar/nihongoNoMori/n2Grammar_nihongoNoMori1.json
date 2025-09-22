@@ -1,0 +1,66 @@
+{
+    "title": "\u65e5\u8a9e\u5b78\u7fd2 N2 \u6587\u6cd5\uff1a\u65e5\u672c\u8a9e\u306e\u68ee \uff5e\u969b vs \uff5e\u306b\u969b\u3057\u3066\uff0e\u306b\u3042\u305f\u3063\u3066",
+    "description": "\u7d00\u9304 \u65e5\u8a9e\u5b78\u7fd2 \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "data": {
+        "twoThemesData": [
+            {
+                "theme": "\uff5e\u969b",
+                "usage": "\u63a5\u7d9a\uff1a\u540d\u8a5e+\u306e+\u969b\uff0e\u8f9e\u66f8/\u30bf\u5f62+\u969b",
+                "meaning": "\u610f\u5473\uff1a\uff5e\u3068\u304d",
+                "notice": "\uff5e\u3068\u304d\u300d\u306e\u786c\u3044\u8a00\u3044\u65b9\uff1d\u53cb\u3060\u3061\u306b\u306f\u4f7f\u308f\u306a\u3044\uff01",
+                "sentence": [
+                    {
+                        "japanese": "\u6771\u4eac\u3078\u6765\u305f\u969b\u306f\u3001\u305c\u3072\u79c1\u306b\u9023\u7d61\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                        "chinese": "\u4f60\u4f86\u5230\u6771\u4eac\u7684\u6642\u5019\uff0c\u8acb\u52d9\u5fc5\u548c\u6211\u806f\u7d61\u3002"
+                    },
+                    {
+                        "japanese": "\u53d7\u9a13\u306e\u969b\u306b\u53d7\u9a13\u7968\u3092\u5fd8\u308c\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002",
+                        "chinese": "\u8981\u53bb\u61c9\u8a66\u7684\u6642\u5019\uff0c\u8acb\u4e0d\u8981\u5fd8\u8a18\u51c6\u8003\u8b49\u3002"
+                    },
+                    {
+                        "japanese": "\u6d77\u5916\u3078\u884c\u304f\u969b\u3001\u6c17\u3092\u3064\u3051\u308b\u3079\u304d\u3053\u3068\u306f\u3042\u308a\u307e\u3059\u304b\uff1f",
+                        "chinese": "\u8981\u51fa\u570b\u7684\u6642\u5019\uff0c\u6709\u5fc5\u9808\u8981\u6ce8\u610f\u7684\u4e8b\u60c5\u55ce\uff1f"
+                    }
+                ]
+            },
+            {
+                "theme": "\uff5e\u306b\u969b\u3057\u3066\uff0e\u306b\u3042\u305f\u3063\u3066",
+                "usage": "\u63a5\u7d9a\uff1a\u540d\u8a5e\u3001\u8f9e\u66f8\u5f62",
+                "meaning": "\u610f\u5473\uff1a\u3053\u308c\u304b\u3089\uff5e\u3059\u308b\u3068\u304d\u306b",
+                "notice": "\u672a\u6765\u306e\u3053\u3068\u306b\u5411\u3051\u3066\u6e96\u5099\u3059\u308b",
+                "sentence": [
+                    {
+                        "japanese": "\u958b\u4f1a\u306b\u969b\u3057\u3066\u3001\u793e\u9577\u304c\u30b9\u30d4\u30fc\u30c1\u3092\u3059\u308b\u3002",
+                        "chinese": "\u793e\u9577\u5728\u958b\u6703\u4e4b\u524d\u81f4\u8fad\u3002"
+                    },
+                    {
+                        "japanese": "\u732b\u3092\u98fc\u3046\u306b\u3042\u305f\u3063\u3066\u5fc5\u8981\u306a\u3082\u306e\u3092\u3059\u3079\u3066\u63c3\u3048\u305f\u3002",
+                        "chinese": "\u5728\u990a\u8c93\u4e4b\u524d\uff0c\u628a\u5fc5\u8981\u7684\u6771\u897f\u5148\u6536\u96c6\u597d\u3002"
+                    },
+                    {
+                        "japanese": "\u9032\u5b66\u5148\u3092\u9078\u3076\u306b\u969b\u3057\u3066\u3001\u304d\u3061\u3093\u3068\u8abf\u3079\u307e\u3057\u3087\u3046\u3002",
+                        "chinese": "\u5728\u9078\u64c7\u672a\u4f86\u5347\u5b78\u5b78\u6821\u7684\u6642\u5019\uff0c\u5148\u597d\u597d\u5730\u8abf\u67e5\u6e05\u695a\u5427\u3002"
+                    }
+                ]
+            }
+        ],
+        "compareTwoThemes": {
+            "title": "\uff5e\u969b vs \uff5e\u306b\u969b\u3057\u3066\uff0e\u306b\u3042\u305f\u3063\u3066",
+            "theme1": "\uff5e\u969b\u306f\u904e\u53bb\u3067\u3082\u672a\u6765\u3067\u3082",
+            "theme2": "\uff5e\u306b\u969b\u3057\u3066\uff0e\u306b\u3042\u305f\u3063\u3066\u306f\u3053\u308c\u304b\u3089\u306e\u3053\u3068\uff08\u6e96\u5099\u3059\u308b\u6642\u306b\uff09"
+        }
+    },
+    "video": {
+        "label": "Japanese JLPT N2 \u6587\u6cd5 #1 \u300c\u969b\u306b\u3001\u969b VS \u306b\u969b\u3057\u3066\u300d",
+        "id": "G9bE4StBgxs"
+    },
+    "page": "/pages/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori1.html",
+    "tags": [
+        "languagesStudy",
+        "japanese",
+        "n2",
+        "grammar",
+        "nihongoNoMori"
+    ],
+    "year": 2025
+}

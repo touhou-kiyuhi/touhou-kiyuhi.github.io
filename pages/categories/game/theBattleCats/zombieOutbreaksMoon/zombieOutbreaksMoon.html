@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,8 @@
     <script type="module" src="/js/components/homeHeader.js"></script>
     <script type="module" src="/js/components/homeFooter.js"></script>
     <script type="module" src="/js/components/homeAside.js"></script>
-    <script type="module" src="/js/components/profileCard.js"></script>
-    <title>Kiyuhi-Touhou Home Page</title>
+    <script type="module" src="/js/categories/game/theBattleCats/theBattleCatsMain.js"></script>
+    <title>不死生物來襲 月球</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Default Styles -->
     <link rel="stylesheet" href="/css/defaultStyle/defaultBodyStyle.css">
@@ -29,42 +29,26 @@
 </head>
 <body>
     <div class="page-container">
-    	<!-- Header 內容 -->
+        <!-- Header 內容 -->
     	<home-header></home-header>
         <div class="content-wrapper">
-	        <!-- 側欄 -->
+            <!-- 側欄 -->
             <div class="content-asides">
                 <home-aside></home-aside>
-                <aside>
-                    <!-- Profile Card -->
-                    <profile-card></profile-card>
-                </aside>
             </div>
-	        <!-- 主內容 -->
+            <!-- 主內容 -->
             <main>
-                <section class="intro">
-                    <h1>Welcome to My Page</h1>
-                    <p>I primarily program in Python and Java, with occasional coding in Ruby, C, and HTML/CSS/JavaScript.</p>
-                    <p>This is my personal test website where I practice and record my learning journey, including coding, language study, and anything else I explore.</p>
-                </section>
-                <section class="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li><a href="/pages/helloWorld.html">Feature 1: hello world</a></li>
-                        <li><a href="/pages/categories/game/theBattleCats/theBattleCatsMenu.html">Feature 2: The Battle Cats</a></li>
-                        <li>Feature 3</li>
-                        <!-- <li><a href="/test/test.html">Special Feature</a></li> -->
-                    </ul>
-                </section>
-                <!-- <article>
+                <!-- Manic Cat Content from json -->
+                <the-battle-cats-main data-json="/json/categories/game/theBattleCats/zombieOutbreaksMoon/zombieOutbreaksMoon.json"></the-battle-cats-main>
+                <article>
                     <h2>Blog Post Title</h2>
                     <p>Some content about the blog post...</p>
-                </article> -->
+                </article>
             </main>
         </div>
         <!-- Footer 內容 -->
         <home-footer></home-footer>
     </div>
-    <script src="/js/home_script.js"></script>
+    <script src="/js/categories/game/theBattleCats/theBattleCats.js"></script>
 </body>
 </html>

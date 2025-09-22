@@ -52,6 +52,22 @@
     ├── custom-font.woff       # 自定義字型
     └── custom-font.ttf        # 字型檔案
 ```
+### .json 下的 Python 檔案說明
+* `categoriesContentBuilder.py` (模板)：
+    生成 `/categories/【category】/【directory】` 下的 `.json` 檔案
+    例如： `/categories/【game】/【theBattleCats】`
+    其 `.json` 檔案經讀取後可做為一網頁內容
+    * 其他：
+        特定規格的 `.json` 檔案，會在在該根資料夾新增延伸 `.py` 檔案作為生成
+        命名規則： `XXXcategoryContentBuilder.py`
+        例如：`gameCategoryContentBuilder.py`
+* `categoriesPortfolioManager.py`：
+    生成 `/categories/【parentName】/【folderName】/【fileName】+Portfolio.json` 檔案
+    例如： `/categories/【game】/【theBattleCats】/【theBattleCats】Portfolio.json`
+    其 `.json` 檔案經讀取後可做為一 **網頁內容 (該 category 的分類表)**
+* `categoriesManager.py`：
+    生成 `/categories.json` 檔案
+    其 `.json` 檔案經讀取後可做為一 **網頁內容 (所有 category 的分類表)**
 ---
 ## 參考資料
 * [使用 GitHub Pages 架設個人網站](https://hackmd.io/@flagmaker/BkvQphP65)

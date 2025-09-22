@@ -9,12 +9,15 @@ class CategoriesManager(JsonSettings):
         super().__init__()
         self.jsonFileManager = JsonFileManager()
         self.categoriesJsonPath = self.jsonFileManager.filePath
+        self.passJsonList = [
+            "theBattleCatsPortfolio"
+        ]
     
     # 所有在 /json/catagories/ 下的 .json
     def traversal(self):
         for dirpath, dirnames, filenames in os.walk(self.jsonFileManager.categoriesDirectoryPath):
             for filename in filenames:
-                if filename.endswith(".json") and filename not in ["theBattleCats.json"]:
+                if filename.endswith(".json") and filename[:-5] not in self.passJsonList:
                     fullPath = os.path.join(dirpath, filename).replace('\\', '/')
                     data = self.jsonController.jsonReader(self.categoriesJsonPath)
                     self.update(data, fullPath)

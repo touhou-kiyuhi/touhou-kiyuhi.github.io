@@ -11,6 +11,7 @@ class DirectoryManager(JsonSettings):
         self.directoryJsonPath = self.jsonFileManager.filePath
     
     # 所有在 /json/catagories/【parentName】/【folderName】 下的 .json
+    # 例如：/json/catagories/【game】/【theBattleCats】 下的 .json
     def traversal(self):
         for dirpath, dirnames, filenames in os.walk(self.jsonFileManager.folderPath):
             for filename in filenames:
@@ -62,9 +63,12 @@ class DirectoryManager(JsonSettings):
 
 
 def main():
+    ###### 更動部分
     parentName = "game"
     folderName = "theBattleCats"
-    fileName = "theBattleCats"
+    fileName = "theBattleCats" 
+    ######
+    fileName += "Portfolio"
     DM = DirectoryManager(parentName, folderName, fileName)
     DM.builder()
 

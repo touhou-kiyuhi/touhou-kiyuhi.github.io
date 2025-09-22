@@ -23,7 +23,7 @@ class CategoriesContentBuilder(JsonSettings):
         videoLabel = ' '.join(self.ytCrawler.ytTitle.split()[1:])
         print()
         if data == {}:
-            pageLink = "/pages/" + '/'.join(self.jsonFileManager.filePath.split('/')[4:])[:-5] + ".html"
+            pageLink = "/pages/" + '/'.join(self.jsonFileManager.filePath.split('/')[2:])[:-5] + ".html"
             print(self.jsonFileManager.filePath, pageLink)
             tags = self.jsonFileManager.folderPath.split('/')[3:]
             data = {

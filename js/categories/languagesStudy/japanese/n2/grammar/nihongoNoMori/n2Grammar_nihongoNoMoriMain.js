@@ -47,7 +47,7 @@ class n2Grammar_nihongoNoMoriMain extends HTMLElement {
 				<h1>${data.title}</h1>
 				<p>${data.description}</p>
 			</section>
-            ${data.data.twoThemesData.map(themeData => `
+            ${data.data.themesData.map(themeData => `
             <section class="theme">
 				<h2>${themeData.theme}</h2>
 				<h3>${themeData.usage}</h3>
@@ -68,9 +68,10 @@ class n2Grammar_nihongoNoMoriMain extends HTMLElement {
 			</section>
             `).join('')}
             <section class="compare">
-                <h2>${data.data.compareTwoThemes.title}</h2>
-                <h2>${data.data.compareTwoThemes.theme1}</h2>
-                <h2>${data.data.compareTwoThemes.theme2}</h2>
+                <h2>${data.data.compareThemes.title}</h2>
+				${data.data.compareThemes.themes.map(theme => `
+					<h2>${theme}</h2>
+				`).join('')}
             </section>
             <section>
 				<h2>${data.video.label}</h2>

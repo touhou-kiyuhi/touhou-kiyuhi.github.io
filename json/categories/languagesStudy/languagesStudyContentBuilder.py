@@ -20,26 +20,32 @@ class CategoriesContentBuilder(JsonSettings):
 
     # 更新 
     def update(self, data, index=None):
-        compareTwoThemes = {
-            "title": self.data[0]["theme"].split("：")[0] + " vs " + self.data[1]["theme"].split("：")[0],
-            "theme1": self.data[0]["theme"].replace("：", "は"),
-            "theme2": self.data[1]["theme"].replace("：", "は")
-        }
-        self.data[0]["theme"] = self.data[0]["theme"].split("：")[0]
-        self.data[1]["theme"] = self.data[1]["theme"].split("：")[0]
-        self.ytCrawler.crawler()
-        videoLabel = ' '.join(self.ytCrawler.ytTitle.split()[1:])
-        print()
         if data == {}:
+            # 文法比較
+            compareThemes = {
+                "title": self.data[0]["theme"].split("：")[0],
+                "themes": [
+                    self.data[0]["theme"].replace("：", "は")
+                ]
+            }
+            # 該文法標題修改
+            self.data[0]["theme"] = self.data[0]["theme"].split("：")[0]
+            # YT 爬蟲，擷取 ID
+            self.ytCrawler.crawler()
+            videoLabel = ' '.join(self.ytCrawler.ytTitle.split()[1:])
+            print()
+            # HTML 路徑
             pageLink = "/pages/" + '/'.join(self.jsonFileManager.filePath.split('/')[2:])[:-5] + ".html"
             print(self.jsonFileManager.filePath, pageLink)
+            # 標籤
             tags = self.jsonFileManager.folderPath.split('/')[3:]
+            # 該文法資料
             data = {
                 "title": self.jsonTitle,
                 "description": self.description,
                 "data": {
-                    "twoThemesData": self.data, 
-                    "compareTwoThemes": compareTwoThemes,
+                    "themesData": self.data, 
+                    "compareThemes": compareThemes,
                 },
                 "video": {
                     "label": videoLabel,
@@ -50,7 +56,16 @@ class CategoriesContentBuilder(JsonSettings):
                 "year": datetime.datetime.now().year
             }
         else:
-            print("the json already exists")
+            if self.data[0]["theme"].split("：")[0] not in [data["data"]["themesData"][i]["theme"] for i in range(len(data["data"]["themesData"]))]:
+                # 文法比較修改，加入新增的資料
+                data["data"]["compareThemes"]["title"] += f"vs {self.data[0]["theme"].split("：")[0]}"
+                data["data"]["compareThemes"]["themes"].append(self.data[0]["theme"].replace("：", "は"))
+                # 該文法標題修改，修改新增的資料
+                self.data[0]["theme"] = self.data[0]["theme"].split("：")[0]
+                # 該文法資料
+                data["data"]["themesData"].append(self.data[0])
+            else:
+                print("the json already exists")
         self.jsonController.jsonWriter(self.jsonFileManager.filePath, data)
 
     def builder(self, index=None):
@@ -82,53 +97,33 @@ if __name__ == "__main__":
         "n2", "grammar"
     ]
     folder = "nihongoNoMori"
-    fileName = "n2Grammar_nihongoNoMori1"
+    fileName = "n2Grammar_nihongoNoMori2"
 
-    jsonTitle = "日語學習 N2 文法：日本語の森 ～際 vs ～に際して．にあたって"
+    jsonTitle = "日語學習 N2 文法：日本語の森 ～とたん（に） vs ～かと思うと．かと思ったら"
     description = "紀錄 日語學習 🐾 的地方 🐾🐾"
     data = [
         {
-            "theme": "～際：過去でも未来でも",
-            "usage": "接続：名詞+の+際．辞書/タ形+際",
-            "meaning": "意味：～とき",
-            "notice": "～とき」の硬い言い方＝友だちには使わない！",
+            "theme": "～かと思うと．かと思ったら：予想外の変化が現れる→主語は自分以外になる！",
+            "usage": "接続：タ/テイル形",
+            "meaning": "意味：～した直後に【意外なことが起こる】",
+            "notice": "予想外のことが起こった！驚きをアピール！",
             "sentence": [
                 {
-                    "japanese": "東京へ来た際は、ぜひ私に連絡してください。",
-                    "chinese": "你來到東京的時候，請務必和我聯絡。"
+                    "japanese": "姉が帰ったかと思ったら、もう出かけていった。",
+                    "chinese": "原以為姊姊回來了，卻已經出門了。"
                 },
                 {
-                    "japanese": "受験の際に受験票を忘れないでください。",
-                    "chinese": "要去應試的時候，請不要忘記准考證。"
+                    "japanese": "雨が降ってきたかと思ったらすぐに止んだ。",
+                    "chinese": "剛一下雨，就馬上停了。"
                 },
                 {
-                    "japanese": "海外へ行く際、気をつけるべきことはありますか？",
-                    "chinese": "要出國的時候，有必須要注意的事情嗎？"
-                }
-            ]
-        },
-        {
-            "theme": "～に際して．にあたって：これからのこと（準備する時に）",
-            "usage": "接続：名詞、辞書形",
-            "meaning": "意味：これから～するときに",
-            "notice": "未来のことに向けて準備する",
-            "sentence": [
-                {
-                    "japanese": "開会に際して、社長がスピーチをする。",
-                    "chinese": "社長在開會之前致辭。"
-                },
-                {
-                    "japanese": "猫を飼うにあたって必要なものをすべて揃えた。",
-                    "chinese": "在養貓之前，把必要的東西先收集好。"
-                },
-                {
-                    "japanese": "進学先を選ぶに際して、きちんと調べましょう。",
-                    "chinese": "在選擇未來升學學校的時候，先好好地調查清楚吧。"
+                    "japanese": "赤ちゃんは寝ているかと思うと泣き出したりする。",
+                    "chinese": "原以為小寶寶正在睡覺，卻又哭了出來。"
                 }
             ]
         }
     ]
-    url = "https://youtu.be/G9bE4StBgxs?si=XPo7KNMBAdrn3tyB"
+    url = "https://youtu.be/kZAoCm0zcjg?si=CoEND8fZSM3SdGHU"
     main(
         category, directory, parentPathList, folder, fileName,
         jsonTitle, description, data, url

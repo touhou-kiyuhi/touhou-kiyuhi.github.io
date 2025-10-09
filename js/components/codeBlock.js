@@ -34,9 +34,16 @@ class CodeBlock extends HTMLElement {
 		}
 
         // 讀取 CSS 模板
-		const css = await loadText(`${basePath}/css/components/codeBlock.css`);
+		const componentCss = await loadText(`${basePath}/css/components/codeBlock.css`);
+		// ⚡️ 關鍵修正：將 highlight.js 主題樣式載入到 Shadow DOM ⚡️
+        // const themeUrl = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css';
+        // const themeCss = await loadText(themeUrl); 
 
-		this.render(code, css, lang);
+		// ⚡️ 修正：從本地路徑載入主題 CSS 內容 ⚡️
+    	const themeCss = await loadText(`${basePath}/css/codeBlockTheme/github-dark.min.css`);
+        const combinedCss = componentCss + '\n' + themeCss;
+
+		this.render(code, combinedCss, lang);
 	}
 
 	render(code, css, lang) {

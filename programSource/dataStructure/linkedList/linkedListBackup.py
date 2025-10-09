@@ -6,7 +6,7 @@ class Node:
 class LinkedList:
     def __init__(self) -> None:
         self.head = self.tail = None
-
+    
     def isEmpty(self) -> bool:
         return self.head is None
     

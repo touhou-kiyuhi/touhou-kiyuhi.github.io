@@ -48,7 +48,7 @@ pre {
     border-bottom: 1px solid #444;  /* 用線段隔開，與代碼內容區分 */
     white-space: pre-wrap;            /* 保證代碼會自動換行，避免超出容器 */
     word-wrap: break-word;            /* 長單詞或長代碼行自動換行 */
-    max-height: 300px;                /* 設置最大高度，超過時會出現垂直滾動條 */
+    max-height: 500px;                /* 設置最大高度，超過時會出現垂直滾動條 */
 }
 
 /* 代碼元素（code）樣式 */
@@ -59,5 +59,5 @@ code {
     color: #dcdcdc;                 /* 代碼文字顏色為淡灰色 */
     font-family: Consolas, Monaco, monospace; /* 設置字體為等寬字體，便於顯示代碼 */
     font-size: 14px;                  /* 字體大小 */
-    white-space: pre;                 /* 保持代碼格式，換行和空格按原樣顯示 */
+    /* white-space: pre;                 保持代碼格式，換行和空格按原樣顯示 */
 }

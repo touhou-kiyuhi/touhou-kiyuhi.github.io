@@ -97,33 +97,33 @@ if __name__ == "__main__":
         "n2", "grammar"
     ]
     folder = "nihongoNoMori"
-    fileName = "n2Grammar_nihongoNoMori2"
+    fileName = "n2Grammar_nihongoNoMori3"
 
-    jsonTitle = "日語學習 N2 文法：日本語の森 ～とたん（に） vs ～かと思うと．かと思ったら"
+    jsonTitle = "日語學習 N2 文法：日本語の森 ～か～ないかのうちに vs ～次第"
     description = "紀錄 日語學習 🐾 的地方 🐾🐾"
     data = [
         {
-            "theme": "～かと思うと．かと思ったら：予想外の変化が現れる→主語は自分以外になる！",
-            "usage": "接続：タ/テイル形",
-            "meaning": "意味：～した直後に【意外なことが起こる】",
-            "notice": "予想外のことが起こった！驚きをアピール！",
+            "theme": "～次第：何かが完了してから",
+            "usage": "接続：" + "マス形",
+            "meaning": "意味：" + "～したら（すぐに）",
+            "notice": "なにかがひとつ終わったら、その後すぐ！",
             "sentence": [
                 {
-                    "japanese": "姉が帰ったかと思ったら、もう出かけていった。",
-                    "chinese": "原以為姊姊回來了，卻已經出門了。"
+                    "japanese": "雨が止み次第、出発だ。",
+                    "chinese": "雨一停就出發。"
                 },
                 {
-                    "japanese": "雨が降ってきたかと思ったらすぐに止んだ。",
-                    "chinese": "剛一下雨，就馬上停了。"
+                    "japanese": "準備ができ次第すぐにお呼びします。",
+                    "chinese": "一準備好就立刻叫我。"
                 },
                 {
-                    "japanese": "赤ちゃんは寝ているかと思うと泣き出したりする。",
-                    "chinese": "原以為小寶寶正在睡覺，卻又哭了出來。"
+                    "japanese": "明日の予定がわかり次第、連絡しますね。",
+                    "chinese": "明天的行程一了解後就連絡我哦！"
                 }
             ]
         }
     ]
-    url = "https://youtu.be/kZAoCm0zcjg?si=CoEND8fZSM3SdGHU"
+    url = "https://youtu.be/KUAiYVArqg8?si=t4qhiJZJ-NY1jBZJ"
     main(
         category, directory, parentPathList, folder, fileName,
         jsonTitle, description, data, url

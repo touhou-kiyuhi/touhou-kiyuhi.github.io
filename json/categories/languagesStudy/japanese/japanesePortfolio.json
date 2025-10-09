@@ -25,6 +25,15 @@
             ],
             "year": 2025,
             "json": "/json/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori2.json"
+        },
+        {
+            "tags": [
+                "n2",
+                "grammar",
+                "nihongoNoMori"
+            ],
+            "year": 2025,
+            "json": "/json/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori3.json"
         }
     ]
 }

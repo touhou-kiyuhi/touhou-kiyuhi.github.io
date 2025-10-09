@@ -1,0 +1,68 @@
+{
+    "title": "\u65e5\u8a9e\u5b78\u7fd2 N2 \u6587\u6cd5\uff1a\u65e5\u672c\u8a9e\u306e\u68ee \uff5e\u304b\uff5e\u306a\u3044\u304b\u306e\u3046\u3061\u306b vs \uff5e\u6b21\u7b2c",
+    "description": "\u7d00\u9304 \u65e5\u8a9e\u5b78\u7fd2 \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "data": {
+        "themesData": [
+            {
+                "theme": "\uff5e\u304b\uff5e\u306a\u3044\u304b\u306e\u3046\u3061\u306b",
+                "usage": "\u63a5\u7d9a\uff1a\u8f9e\u66f8/\u30bf\u5f62+\u304b+\u30ca\u30a4\u5f62+\u306a\u3044\u304b\u306e\u3046\u3061\u306b",
+                "meaning": "\u610f\u5473\uff1a\uff5e\u304c\u7d42\u308f\u308b\u306e\u3068\u307b\u307c\u540c\u6642\u306b",
+                "notice": "\u7d42\u308f\u3063\u305f\u306e\u3082\u6c17\u3065\u304b\u306a\u3044\u304f\u3089\u3044\uff01\u540c\u6642\uff01",
+                "sentence": [
+                    {
+                        "japanese": "5\u5206\u7d4c\u3063\u305f\u304b\u7d4c\u305f\u306a\u3044\u304b\u306e\u3046\u3061\u306b\u8fd4\u4fe1\u304c\u6765\u305f\u3002",
+                        "chinese": "\u624d\u525b\u904e\u4e865\u5206\u9418\u5c31\u6536\u5230\u4e86\u56de\u4fe1\u3002"
+                    },
+                    {
+                        "japanese": "\u8a71\u304c\u7d42\u308f\u3063\u305f\u304b\u7d42\u308f\u3089\u306a\u3044\u304b\u306e\u3046\u3061\u306b\u884c\u3063\u3066\u3057\u307e\u3063\u305f\u3002",
+                        "chinese": "\u8a71\u624d\u525b\u4e00\u8aaa\u5b8c\u5c31\u8d70\u4e86\u3002"
+                    },
+                    {
+                        "japanese": "\u30c1\u30e3\u30a4\u30e0\u304c\u9cf4\u3063\u305f\u304b\u9cf4\u3089\u306a\u3044\u304b\u306e\u3046\u3061\u306b\u5e2d\u3092\u7acb\u3063\u305f\u3002",
+                        "chinese": "\u9418\u8072\u624d\u525b\u4e00\u97ff\u8d77\u5c31\u96e2\u958b\u4e86\u5ea7\u4f4d\u3002"
+                    }
+                ]
+            },
+            {
+                "theme": "\uff5e\u6b21\u7b2c",
+                "usage": "\u63a5\u7d9a\uff1a\u30de\u30b9\u5f62",
+                "meaning": "\u610f\u5473\uff1a\uff5e\u3057\u305f\u3089\uff08\u3059\u3050\u306b\uff09",
+                "notice": "\u306a\u306b\u304b\u304c\u3072\u3068\u3064\u7d42\u308f\u3063\u305f\u3089\u3001\u305d\u306e\u5f8c\u3059\u3050\uff01",
+                "sentence": [
+                    {
+                        "japanese": "\u96e8\u304c\u6b62\u307f\u6b21\u7b2c\u3001\u51fa\u767a\u3060\u3002",
+                        "chinese": "\u96e8\u4e00\u505c\u5c31\u51fa\u767c\u3002"
+                    },
+                    {
+                        "japanese": "\u6e96\u5099\u304c\u3067\u304d\u6b21\u7b2c\u3059\u3050\u306b\u304a\u547c\u3073\u3057\u307e\u3059\u3002",
+                        "chinese": "\u4e00\u6e96\u5099\u597d\u5c31\u7acb\u523b\u53eb\u6211\u3002"
+                    },
+                    {
+                        "japanese": "\u660e\u65e5\u306e\u4e88\u5b9a\u304c\u308f\u304b\u308a\u6b21\u7b2c\u3001\u9023\u7d61\u3057\u307e\u3059\u306d\u3002",
+                        "chinese": "\u660e\u5929\u7684\u884c\u7a0b\u4e00\u4e86\u89e3\u5f8c\u5c31\u9023\u7d61\u6211\u54e6\uff01"
+                    }
+                ]
+            }
+        ],
+        "compareThemes": {
+            "title": "\uff5e\u304b\uff5e\u306a\u3044\u304b\u306e\u3046\u3061\u306bvs \uff5e\u6b21\u7b2c",
+            "themes": [
+                "\uff5e\u304b\uff5e\u306a\u3044\u304b\u306e\u3046\u3061\u306b\u306f\u307b\u307c\u540c\u6642\uff01",
+                "\uff5e\u6b21\u7b2c\u306f\u4f55\u304b\u304c\u5b8c\u4e86\u3057\u3066\u304b\u3089"
+            ]
+        }
+    },
+    "video": {
+        "label": "Japanese JLPT N2 \u6587\u6cd5 #3 \u300c\uff5e\u304b\uff5e\u306a\u3044\u304b\u306e\u3046\u3061\u306b \uff36\uff33 \u6b21\u7b2c(\u3057\u3060\u3044)\u300d",
+        "id": "KUAiYVArqg8"
+    },
+    "page": "/pages/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori3.html",
+    "tags": [
+        "languagesStudy",
+        "japanese",
+        "n2",
+        "grammar",
+        "nihongoNoMori"
+    ],
+    "year": 2025
+}

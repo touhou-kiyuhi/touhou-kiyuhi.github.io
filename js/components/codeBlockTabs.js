@@ -64,7 +64,7 @@ class CodeBlockTabs extends HTMLElement {
 			<div class="tab-content" id="myTabContent">
 				${tabData.data.map((themeData, idx) => `
 				<div class="tab-pane fade ${idx === 0? 'show active':''}" id="${themeData.title.split(' ').slice(-1)[0].toLowerCase()}" role="tabpanel" aria-labelledby="${themeData.title.split(' ').slice(-1)[0].toLowerCase()}-tab">
-					</br>
+					<br/>
 					<section>
 						<h2>${themeData.title}</h2>
 						</br>

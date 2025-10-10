@@ -3,7 +3,9 @@
         "game",
         "theBattleCats",
         "languagesStudy",
-        "japanese"
+        "japanese",
+        "coding",
+        "dataStructure"
     ],
     "yearList": [
         2025
@@ -144,6 +146,22 @@
             ],
             "year": 2025,
             "json": "/json/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori2.json"
+        },
+        {
+            "tags": [
+                "languagesStudy",
+                "japanese"
+            ],
+            "year": 2025,
+            "json": "/json/categories/languagesStudy/japanese/n2/grammar/nihongoNoMori/n2Grammar_nihongoNoMori3.json"
+        },
+        {
+            "tags": [
+                "coding",
+                "dataStructure"
+            ],
+            "year": 2025,
+            "json": "/json/categories/coding/dataStructure/linkedList/singleLinkedList/singleLinkedList.json"
         }
     ]
 }

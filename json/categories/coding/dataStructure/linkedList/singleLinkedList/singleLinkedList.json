@@ -1,0 +1,142 @@
+{
+    "title": "\u8cc7\u6599\u7d50\u69cb\uff1aSingle Linked List",
+    "description": "\u7d00\u9304 \u8cc7\u6599\u7d50\u69cb \ud83d\udc3e \u7684\u5730\u65b9 \ud83d\udc3e\ud83d\udc3e",
+    "data": [
+        {
+            "title": "Learn single linked list in Python",
+            "description": {
+                "node": {
+                    "theme": "Class: `ListNode`",
+                    "description": "A helper class that represents a single node in the linked list."
+                },
+                "dataStructure": {
+                    "theme": "Class: `SingleLinkedList`",
+                    "description": "This class implements a singly linked list data structure that supports fundamental list operations such as insertion, deletion, searching, updating, and traversal.",
+                    "methods": [
+                        {
+                            "method": "`appendNode(data)`",
+                            "description": "Adds a new node containing `data` to the end of the linked list."
+                        },
+                        {
+                            "method": "`insertNode(data, index)`",
+                            "description": "Inserts a new node with `data` at the specified `index`. Raises `IndexError` if the index is invalid."
+                        },
+                        {
+                            "method": "`getNodeByIndex(index)`",
+                            "description": "Returns the node at the specified index. Raises `IndexError` if the index is out of range."
+                        },
+                        {
+                            "method": "`findNode(data)`",
+                            "description": "Searches for the first node containing `data` and returns its index. Returns `None` if not found."
+                        },
+                        {
+                            "method": "`updateNode(data, index)`",
+                            "description": "Updates the value of the node at the specified index. Raises `IndexError` if the index is invalid."
+                        },
+                        {
+                            "method": "`deleteNode(index)`",
+                            "description": "Deletes the node at the specified index. Raises `IndexError` if the index is out of range."
+                        },
+                        {
+                            "method": "`reverseLinkedList()`",
+                            "description": "Reverses the entire linked list in place. Raises `ValueError` if the list is empty."
+                        },
+                        {
+                            "method": "`clear()`",
+                            "description": "Removes all nodes from the linked list."
+                        },
+                        {
+                            "method": "`__len__()`",
+                            "description": "Returns the number of nodes in the linked list."
+                        },
+                        {
+                            "method": "`__getitem__(index)`",
+                            "description": "Retrieves the value of the node at the given index. Supports negative indexing."
+                        },
+                        {
+                            "method": "`__setitem__(index, data)`",
+                            "description": "Updates the node's value at the given index using bracket notation."
+                        },
+                        {
+                            "method": "`__iter__()`",
+                            "description": "Allows iteration through the list's values using a `for` loop or comprehension."
+                        },
+                        {
+                            "method": "`__str__()`",
+                            "description": "Returns a string representation of the list (e.g., `\"A -> B -> C -> None\"`)."
+                        }
+                    ]
+                }
+            },
+            "codePath": "/programSource/dataStructure/linkedList/singleLinkedList/singleLinkedList.py"
+        },
+        {
+            "title": "Learn single linked list in Java",
+            "description": {
+                "node": {
+                    "theme": "Class: `ListNode`",
+                    "description": "Represents a single node in the linked list."
+                },
+                "dataStructure": {
+                    "theme": "Class: `SingleLinkedList`",
+                    "description": "Represents a singly linked list where each node (`ListNode`) stores an `Object` value and a reference to the next node.",
+                    "methods": [
+                        {
+                            "method": "`appendNode(data)`",
+                            "description": "Adds a new node containing `data` to the end of the linked list."
+                        },
+                        {
+                            "method": "`insertNode(data, index)`",
+                            "description": "Inserts a new node with `data` at the specified `index`. Raises `IndexOutOfBoundsException` if the index is invalid."
+                        },
+                        {
+                            "method": "`getNodeByIndex(index)`",
+                            "description": "Returns the node at the specified index. Raises `IndexOutOfBoundsException` if the index is out of range."
+                        },
+                        {
+                            "method": "`findNode(data)`",
+                            "description": "Searches for the first node containing `data` and returns its index. Returns `null` if not found."
+                        },
+                        {
+                            "method": "`updateNode(data, index)`",
+                            "description": "Updates the value of the node at the specified index. Raises `IndexOutOfBoundsException` if the index is invalid."
+                        },
+                        {
+                            "method": "`deleteNode(index)`",
+                            "description": "Deletes the node at the specified index. Raises `IndexOutOfBoundsException` if the index is out of range."
+                        },
+                        {
+                            "method": "`reverseLinkedList()`",
+                            "description": "Reverses the entire linked list in place. Raises `IllegalArgumentException` if the list is empty."
+                        },
+                        {
+                            "method": "`clear()`",
+                            "description": "Removes all nodes from the linked list."
+                        },
+                        {
+                            "method": "`size()`",
+                            "description": "Returns the number of nodes in the linked list."
+                        },
+                        {
+                            "method": "`toList()`",
+                            "description": "Returns a `List<Object>` containing all values from the linked list in order."
+                        },
+                        {
+                            "method": "`toString()`",
+                            "description": "Returns a string representation of the linked list (e.g., `\"A -> B -> C -> None\"` or `\"This linked list is empty\"`)."
+                        }
+                    ]
+                }
+            },
+            "codePath": "/programSource/dataStructure/linkedList/singleLinkedList/SingleLinkedListMain.java"
+        }
+    ],
+    "page": "/pages/categories/coding/dataStructure/linkedList/singleLinkedList/singleLinkedList.html",
+    "tags": [
+        "coding",
+        "dataStructure",
+        "linkedList",
+        "singleLinkedList"
+    ],
+    "year": 2025
+}

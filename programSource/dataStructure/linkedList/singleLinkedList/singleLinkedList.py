@@ -6,10 +6,10 @@ class ListNode:
         self.val = val
         self.next = None
 
-class LinkedList:
+class SingleLinkedList:
     def __init__(self) -> None:
         self.head = None
-
+    # 新增節點
     def appendNode(self, data: object) -> None:
         newNode = ListNode(data)
         if self.head is None:
@@ -19,7 +19,7 @@ class LinkedList:
             while currentNode.next is not None:
                 currentNode = currentNode.next
             currentNode.next = newNode
-    
+    # 插入節點
     def insertNode(self, data: object, index: int) -> None:
         newNode = ListNode(data)
         if self.head is None and index > 0:
@@ -38,7 +38,7 @@ class LinkedList:
             else:
                 newNode.next = currentNode.next
                 currentNode.next = newNode
-    
+    # 取得節點
     def getNodeByIndex(self, index: int) -> Optional[ListNode]:
         if self.head is None:
             raise IndexError("Get index out of range on empty linked list")
@@ -51,7 +51,17 @@ class LinkedList:
             if currentNode is None:
                 raise IndexError("Get index out of range")
             return currentNode
-    
+    # 搜尋節點
+    def findNode(self, data: object) -> int:
+        currentNode = self.head
+        index = 0
+        while currentNode is not None:
+            if currentNode.val == data:
+                return index
+            currentNode = currentNode.next
+            index += 1
+        return None
+    # 更新節點
     def updateNode(self, data: object, index: int) -> None:
         if self.head is None:
             raise IndexError("Update index out of range on empty linked list")
@@ -65,7 +75,7 @@ class LinkedList:
                 raise IndexError("Update index out of range")
             else:
                 currentNode.val = data
-
+    # 刪除節點
     def deleteNode(self, index: int) -> None:
         if self.head is None:
             raise IndexError("Delete index out of range on empty linked list")
@@ -83,7 +93,7 @@ class LinkedList:
                 raise IndexError("Delete index out of range")
             else:
                 previousNode.next = currentNode.next
-
+    # 反轉 Linked List
     def reverseLinkedList(self) -> None:
         if self.head is None:
             raise ValueError("Cannot reverse an empty linked list")
@@ -95,6 +105,9 @@ class LinkedList:
             previousNode = currentNode
             currentNode = nextNode
         self.head = previousNode
+    # 清空 Linked List
+    def clear(self) -> None:
+        self.head = None
     
     def __len__(self) -> int:
         count = 0
@@ -133,19 +146,36 @@ class LinkedList:
 
 
 def main():
-    LL = LinkedList()
-    LL.insertNode("B", 0)
-    LL.insertNode("A", 0)
-    LL.insertNode("C", 2)
-    print(LL) # A -> B -> C -> None
-    LL.updateNode("AA", 0)
-    print(LL) # AA -> B -> C -> None
-    print(LL[1]) # B
-    print(LL[-1]) # C
-    LL[2] = "CCC"
-    print(LL) # AA -> B -> CCC -> None
-    LL.reverseLinkedList()
-    print(LL)
+    SLL = SingleLinkedList()
+    # 新增節點
+    SLL.appendNode("B")
+    SLL.appendNode("BC")
+    print(SLL) # B -> BC -> None
+    # 插入節點
+    SLL.insertNode("A", 0)
+    SLL.insertNode("C", 3)
+    print(SLL) # A -> B -> BC -> C -> None
+    # 更新節點
+    SLL.updateNode("AA", 0)
+    print(SLL) # AA -> B -> BC -> C -> None
+    # 刪除節點
+    SLL.deleteNode(2) 
+    print(SLL) # AA -> B -> C -> None
+    # 反轉 Linked List
+    SLL.reverseLinkedList()
+    print(SLL) # C -> B -> AA -> None
+
+    print(f"取得節點: {SLL.getNodeByIndex(1).val}")
+    print(f"搜尋節點: {SLL.findNode("B")}")
+
+    print(SLL[1]) # B
+    print(SLL[-1]) # C
+    SLL[2] = "A"
+    print(SLL) # C -> B -> A -> None
+    SLL.reverseLinkedList()
+    print(SLL)
+    SLL.clear()
+    print(SLL) # This linked list is empty
 
 
 if __name__ == "__main__":
